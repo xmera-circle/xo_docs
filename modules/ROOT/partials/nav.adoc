@@ -1,0 +1,10 @@
+* xref:index.adoc[Einführung]
+
+.xmera Omnia Benutzerhandbücher
+* xref:1.0@xo-doc:anwender:anwender_aufbau.adoc[Anwenderhandbuch]
+* xref:1.0@xo-doc:admin:admin_objektklassen.adoc[Adminhandbuch]
+
+.xmera Omnia Demo Guide
+* xref:1.0@xo-quick-guide:einfuehrung:index.adoc[Einführung]
+* xref:1.0@xo-quick-guide:demo_27k:index.adoc[ISO27k Demo]
+* xref:1.0@xo-quick-guide:demo_cisis12:index.adoc[CISIS12 Demo]

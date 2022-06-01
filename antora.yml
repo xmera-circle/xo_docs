@@ -1,0 +1,7 @@
+name: xo-doc-gesamt
+title: xmera Omnia Dokumentation
+version: '1.0'
+start_page: ROOT:index.adoc
+nav:
+
+- modules/ROOT/partials/nav.adoc
