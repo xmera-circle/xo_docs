@@ -1,0 +1,65 @@
+pass:[<style>
+.subtitle { 
+  color: #706e6e;
+  font-weight: bold;
+  font-size: 1em;
+}
+div.paragraph .overview {  
+  padding-top: 100px;
+}
+div.gallery {  
+  padding-bottom: 100px;
+}
+div.gallery:hover:not(.unreleased) {
+  opacity: 0.5;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.gallery.unreleased img {  
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+div.gallery.unreleased .desc {  
+  color: #cccccc;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.desc span {  
+  line-height: 5;
+}
+.doc a div.desc {
+  color: #333333;
+}
+* {
+  box-sizing: border-box;
+}
+.responsive {
+  padding: 0 25px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.doc hr.lisence {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+</style>]
