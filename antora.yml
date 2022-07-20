@@ -1,6 +1,7 @@
-name: xmera-omnia-docs
+name: xmera-omnia-dokumentation
 title: xmera Omnia Dokumentation
-version: '3.6'
+version: ~
+display_version: latest
 start_page: ROOT:index.adoc
 nav:
 

@@ -1,5 +1,3 @@
-.PHONY: help 
-
 # Set default variables
 #
 #ifndef TAG
@@ -20,17 +18,39 @@
 #XMERA_ROOT=${SOLUTION}_${TAG}
 #PWD=$(shell pwd)
 #TIMESTAMP=$(shell date +"%Y-%m-%d_%H-%M-%S")
+PATH_TO_FILE=$(shell npm bin)
+ifneq ("$(wildcard $(PATH_TO_FILE))","")
+    LOCAL=1
+else
+    LOCAL=0
+endif
 
 default: help
 
+.PHONY: help 
 help: #: Show help topics
 	@grep "#:" Makefile* | grep -v "@grep" | sort | sed "s/\([A-Za-z_ -]*\):.*#\(.*\)/$$(tput setaf 3)\1$$(tput sgr0)\2/g"
 
-xo-doc_html: #: Generate antora html output
-	@antora playbook.yml; \
-	firefox build/site/index.html;
+.PHONY: html
+html: #: Generate antora html output
+ifeq ($(LOCAL), 1)
+	${PATH_TO_FILE}/antora playbook.yml;
+else
+	antora playbook.yml;
+endif
 
-xo-doc_pdf: #: Generate asciidoctor pdf document
+.PHONY: html_browser 
+html_browser: #: Generate antora html output AND open index.html in browser
+ifeq ($(LOCAL), 1)
+	${PATH_TO_FILE}/antora playbook.yml; \
+	firefox build/site/index.html;
+else
+	antora playbook.yml; \
+	firefox build/site/index.html;
+endif
+
+.PHONY: pdf
+pdf: #: Generate asciidoctor pdf document
 	@cd ./pdf; \
 	asciidoctor-pdf xo-doc.adoc; \
 	cd ..; \
