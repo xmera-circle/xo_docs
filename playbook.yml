@@ -1,8 +1,7 @@
 site:
   title: Dokumentation xmera Omnia
-  # the 404 page and sitemap files only get generated when the url property is set
   url: /
-  start_page: xmera-omnia-docs:ROOT:index.adoc
+  start_page: xmera-omnia-dokumentation:ROOT:index.adoc
 content:
   sources: 
   - url: .
@@ -18,9 +17,10 @@ content:
 
 ui:
   bundle:
-    url: https://github.com/xmera-circle/antora-ui-omnia/releases/download/0.2.2/ui-bundle.zip
+    url: https://github.com/xmera-circle/antora-ui-omnia/releases/download/0.2.3/ui-bundle.zip
     snapshot: true
 
 antora:
   extensions:
   - require: '@antora/lunr-extension'
+
