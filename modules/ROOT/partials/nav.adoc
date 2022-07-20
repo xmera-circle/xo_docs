@@ -1,10 +1,10 @@
-* xref:index.adoc[Übersicht]
+* xref:index.adoc[Hauptseite]
 
 .xmera Omnia Guide
-* xref:3.6@xmera-omnia-guide:anwender-handbuch:aufbau.adoc[Anwenderhandbuch]
-* xref:3.6@xmera-omnia-guide:admin-handbuch:objektklassen.adoc[Adminhandbuch]
+* xref:xmera-omnia-guide:anwenderhandbuch:bediengrundlagen.adoc[Anwenderhandbuch]
+* xref:xmera-omnia-guide:admin-handbuch:objektklassen.adoc[Adminhandbuch]
 
 .xmera Omnia Demo Guide
-* xref:3.6@xmera-omnia-demo-guide:einfuehrung:index.adoc[Einführung]
-* xref:3.6@xmera-omnia-demo-guide:isms-iso-27k:index.adoc[ISO27k Demo]
-* xref:3.6@xmera-omnia-demo-guide:isms-cisis-12:index.adoc[CISIS12 Demo]
+* xref:xmera-omnia-demo-guide:einfuehrung:index.adoc[Einführung]
+* xref:xmera-omnia-demo-guide:isms-iso-27k:index.adoc[ISO27k Demo]
+* xref:xmera-omnia-demo-guide:isms-cisis-12:index.adoc[CISIS12 Demo]

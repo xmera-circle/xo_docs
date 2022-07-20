@@ -1,7 +1,24 @@
-= Dokumentation xmera Omnia
+= xmera Omnia Dokumentation
 :doctype: article
 :icons: font
 :imagesdir: ../images/
 :web-xmera: https://xmera.de
+:page-toclevels: -1
 
-Gesamtdokumentation
+[.subtitle]#https://xmera.de/xmera-omnia-managementsystem[xmera Omnia] Ihre Lösung zur Unterstützung des Informationssicherheits- und Datenschutzmanagements.#
+
+Sie können xmera Omnia als https://xmera.de/community-support/[Community Edition] selbst zusammenbauen und auf Ihrem Linux Server installieren oder für einen https://xmera.de/live-vorfuehrung/[Live-Termin] unserem Vertrieb kontaktieren.
+
+include::partial$uebersicht-css.adoc[]
+
+include::partial$uebersicht.adoc[]
+
+== Fehler in der Dokumentation melden & Wie Sie mitmachen können
+
+Wenn Sie in einem der Handbücher einen Fehler finden oder ein Thema fehlt, freuen wir uns über eine Fehlermeldung von Ihnen. 
+
+Sich an der Dokumentation zu beteiligen ist sehr einfach, da der gesamte Code auf GitHub verfügbar ist und dort bearbeitet werden kann.
+
+Fehlermeldungen können Sie direkt auf https://github.com/xmera-circle[GitHub] oder auf unserer Entwicklungsplattform https://circle.xmera.de/projects/xmera-omnia-documentation[xmera Circle] einstellen. xmera Omnia Nutzer mit https://xmera.de/subskription/[Subskription] können eine Fehlermeldung über das https://service.xmera.de[Serviceportal] an uns richten.
+
+include::partial$lizenz.adoc[]

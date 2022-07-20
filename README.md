@@ -1,61 +1,57 @@
 # xmera Omnia Documentation
 
-Developer project of xmera Omnia application manual
+Developer project of xmera Omnia Documentation
 
-![xmera Omnia manual Version](https://img.shields.io/badge/xmera_Omnia_Documentation-0.1.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v3.x-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-development-important)
+![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-0.1.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v3.6.x-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
 
-The xmera Omnia manual is written in asciidoc and convertible into html by antora or converitble into a pdf file.
+The xmera Omnia Documentation is written in AsciiDoc and convertible into HTML by Antora or converitble into a pdf file.
 
-## Context Information
-
-This project has the function to centralize the different antora documentation projects to one antora site. In the first it centralizes
-
-- the xmera Omnia Guide (xo-guide) and 
-- the xmera Omnia Demo Guide (xo-demo-guide)
+---
 
 ## Installation
 
-You need to run antora in the version 3.01 to have all used functions.
+The documentation is based on AsciiDoc. The adoc-files are converted to a HTML documentation by Antora and to a PDF document by Asciidoctor PDF.
 
-Antora requires an active long term support (LTS) release of Node.js. How to install node.js and antora is described in the [antora guick installation guide](https://docs.antora.org/antora/latest/install-and-run-quickstart/)
+So you need to install:
 
-## Configuration
+- [Antora](https://docs.antora.org/antora/latest/install-and-run-quickstart/) and
+- [Antora Lunr Extension](https://docs.antora.org/antora/latest/extend/supported-components/#component-matrix)
+- [Asciidoctor PDF](https://asciidoctor.org/docs/asciidoctor-pdf/#install-the-published-gem)
 
-The xmera Omnia Documentation uses the antora function to implement different content sources in to one antora project. Therefore in the antora playbook the different sources have to be intergratet by defining the 3 sources
+For doing so, make sure you run the latest Node.js LTS version:
 
-- xo-guide (xmera Omnia Documentation)  
-local ressource: .
-- xo-guide (xmera Omnia Documentation)  
-local ressource: ../xo_guide  
-git ressouce:
-- xo-demo-guide: ../xo:dem_guide  
-local ressource: ../xo_guide  
-git ressouce:
+    node --version
+    v16.13.1
 
-The link between the project is implemented by the help of xref references in the menu in the sidebar
+Install all dependencies of this project by
 
-- xref:_version_@_antora-project-name_:_module-name_:_site-file-name_[_linkname_]
+    npm install
 
-A sample is:
+## Create xmera Omnia Documentation via Makefile
 
-- xref:1.0@xo-demo-guide:einfuehrung:index.adoc[Einführung]
+The following commands will build the documentation with all its components.
 
-## Use of partials
+That is, you need also [xo_demo_guide](https://github.com/xmera-circle/xo_demo_guide) and [xo_guide](https://github.com/xmera-circle/xo_guide)!
 
-To make the work less complex to build the central menu (nav.adoc) in the modules folder, it it is possible to implement the menu part of each module and implement this site menus by references to the central nav.adoc.
+Create the Antora HTML pages and start the guide with Firefox:
 
-Therefore the nav.adoc of every modul has to be placed in a partials folder in the module folder. Wis the partial function of antora it is now possible to implement the site menus into the central menu.
+    make html_browser
 
-- xref:_module-name_:partial$_partial-file-name_[]
+Create the pages without starting the browser:
 
-A sample is:
+    make html
 
-include::admin:partial$nav.adoc[]
+Create the pdf document and start the document in the document reader:
+
+    make pdf
+
+**NOTE** The PDF Creator is not working right now!
 
 ## Changelog
 
-All notable changes to this plugin will be reported in the [changelog](https://circle.xmera.de/projects/xmera-omnia-documentation/repository/xo_docs/revisions/develop/entry//CHANGELOG.md).
+All notable changes to this project will be reported in the [changelog](https://circle.xmera.de/projects/xmera-omnia-guide/repository/xo_guide/revisions/develop/entry//CHANGELOG.md).
 
 ## License
 
-...
+xmera Omnia Documentation © 2022 by [xmera Solutions GmbH](https://xmera.de) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
+

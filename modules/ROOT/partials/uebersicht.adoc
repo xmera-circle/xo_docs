@@ -1,0 +1,30 @@
+pass:[<div class="overview">
+  <div class="responsive">
+    <div class="gallery">
+      <a href="/xmera-omnia-demo-guide/einfuehrung/index.html">
+        <img src="_images/icon-demo-guide.png" alt="xmera Omnia Demo Guide" width="300" height="300">
+        <div class="desc">xmera Omnia Demo Guide</div>
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a href="/xmera-omnia-guide/anwenderhandbuch/bediengrundlagen.html">
+        <img src="_images/icon-anwenderhandbuch.png" alt="xmera Omnia Anwenderhandbuch" width="300" height="300">
+        <div class="desc">xmera Omnia Anwenderhandbuch</div>
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery unreleased">
+      <img src="_images/icon-adminhandbuch.png" alt="xmera Omnia Adminhandbuch" width="300" height="300">
+      <div class="desc"><span>IN ARBEIT</span></div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery unreleased">
+      <img src="_images/icon-betriebshandbuch.png" alt="xmera Omnia Betriebshandbuch" width="300" height="300">
+      <div class="desc"><span>IN ARBEIT</span></div>
+    </div>
+  </div>
+</div>]
