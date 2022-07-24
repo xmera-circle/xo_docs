@@ -16,9 +16,9 @@ pass:[<div class="overview">
     </div>
   </div>
   <div class="responsive">
-    <div class="gallery unreleased">
+    <div class="gallery">
       <img src="_images/icon-adminhandbuch.png" alt="xmera Omnia Adminhandbuch" width="300" height="300">
-      <div class="desc"><span>IN ARBEIT</span></div>
+      <div class="desc">xmera Omnia Adminhandbuch » IN ARBEIT</div>
     </div>
   </div>
   <div class="responsive">
