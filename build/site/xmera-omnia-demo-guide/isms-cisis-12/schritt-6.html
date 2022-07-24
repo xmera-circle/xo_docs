@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Schritt 6 » Compliance, Prozesse und Anwendungen :: Dokumentation xmera Omnia</title>
+    <meta name="description" content="In CISIS 12 Schritt 6 werden Compliance, Prozesse und Anwendungen analysiert">
+    <meta name="keywords" content="CISIS 12, ISMS, kritische Prozesse">
+    <meta name="generator" content="Antora 3.0.2">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="stylesheet" href="../../_/font-awesome/css/font-awesome.min.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://xmera.de">
+        <img class="navbar-logo" src="https://xmera.de/wp-content/uploads/2021/12/cropped-xmera-logo-mit-claim-transparent.png"
+          alt="xmera Omnia Docs">
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link main-item" href="#">Software</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://xmera.de/xmera-omnia-managementsystem/">xmera Omnia</a>
+            <a class="navbar-item" href="https://xmera.de/beratungstermin/">Beratungsermin</a>
+            <a class="navbar-item" href="https://xmera.de/live-vorfuehrung/">Live Vorführung</a>
+            <a class="navbar-item" href="https://xmera.de/angebot-anfordern/">Angebot anfordern</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link main-item" href="#">Service</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.redmine.org/projects/redmine/boards">Community Support</a>
+            <a class="navbar-item" href="https://service.xmera.de/">Enterprise Support</a>
+            <a class="navbar-item" href="https://xmera.de/subskription/">Preise</a>
+            <a class="navbar-item" href="https://docs.xmera.de/">Dokumentation</a>
+            <a class="navbar-item" href="https://xmera.de/isms-evaluierungsworkshop/">Evaluierungsworkshop</a>
+            <a class="navbar-item" href="https://xmera.de/infoservice/">Infoservice</a>
+          </div>
+        </div>
+        <a class="navbar-link main-item no-dropdown" href="https://xmera.de/downloads/">Downloads</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link main-item" href="#">Unternehmen</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://xmera.de/unternehmen-xmera/">Über uns</a>
+            <a class="navbar-item" href="https://xmera.de/isms-blog/">Blog</a>
+            <a class="navbar-item" href="https://circle.xmera.de/">Softwareentwicklung</a>
+            <a class="navbar-item" href="https://xmera.de/kontakt">Kontakt</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs" >
+        </div>
+      </div>
+    </div>
+    <div id="subbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <nav id="social-nav">
+  <a href="https://www.xing.com/pages/xmera-solutions"><i class="fa fa-xing" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/company/xmera-solutions"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+  <a href="https://github.com/xmera-circle"><i class="fa fa-github" aria-hidden="true"></i></a>
+</nav>          <span class="control cta-wrap">
+            <a class="button is-primary" href="https://xmera.de/live-vorfuehrung/">Live Termin</a>
+            <a class="button is-secondary" href="https://xmera.de/kontakt">Kontakt</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="xmera-omnia-demo-guide" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../einfuehrung/index.html">xmera Omnia Demo Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../einfuehrung/index.html">Einführung</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../einfuehrung/orientierung.html">Orientierung</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../einfuehrung/demo-gmbh.html">demo GmbH</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../einfuehrung/besonderheiten.html">Besonderheiten</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../isms-iso-27k/index.html">ISO 27k Demo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/planung-bewertung.html">ISMS-Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/geschaeftsprozesse.html">Geschäftsprozesse und Informationen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/assetregister.html">Assetregister</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/dokumentation.html">Dokumentation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/schutzbedarfsfeststellung.html">Schutzbedarf</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/risikobewertung.html">Risikobewertung</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/it-servicemanagement.html">IT-Servicemanagement</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../isms-iso-27k/sonstiges.html">Sonstiges</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">CISIS 12 Demo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-0-3.html">CISIS 12 Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-4.html">IT-Doku-Struktur</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-5.html">IT-Servicemanagement</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="schritt-6.html">Compliance, Prozesse und Anwendungen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-7.html">IT-Strukturanalyse</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-8.html">Risikomanagement</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-9.html">Soll-Ist-Vergleich</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-10.html">Planung und Umsetzung</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-11.html">Internes Audit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="schritt-12.html">Revision</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="sonstiges.html">Sonstiges</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../xmera-omnia-dokumentation/index.html"><strong>Zurück zur Hauptseite</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">xmera Omnia Demo Guide</span>
+    <span class="version">latest</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../einfuehrung/index.html">xmera Omnia Demo Guide</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../einfuehrung/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../xmera-omnia-dokumentation/index.html">xmera Omnia Dokumentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../xmera-omnia-dokumentation/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../xmera-omnia-guide/anwenderhandbuch/bediengrundlagen.html">xmera Omnia Handbücher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../xmera-omnia-guide/anwenderhandbuch/bediengrundlagen.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../xmera-omnia-dokumentation/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../einfuehrung/index.html">xmera Omnia Demo Guide</a></li>
+    <li><a href="index.html">CISIS 12 Demo</a></li>
+    <li><a href="schritt-6.html">Compliance, Prozesse und Anwendungen</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/login?return_to=%2Fxmera-circle%2Fantora-ui-omnia">Seite bearbeiten</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Schnellzugriff" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Schritt 6 » Compliance, Prozesse und Anwendungen</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><style>
+.distance-25 {
+  display:block;
+  height:25px;
+}
+.flex-container {
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.video-container {
+  flex: 0 0 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.center {
+  text-align:center;
+}
+video {  width: 100%; }
+video,
+.imageblock img {
+  height: auto;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31,32,68,.16);
+  -webkit-transition: all .7s cubic-bezier(.23,1,.32,1);
+  transition: all .7s cubic-bezier(.23,1,.32,1);
+  box-shadow: 0 2px 8px 0 rgba(31,32,68,.16);
+  border-color: #f3f4f4;
+}
+.videoblock {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.doc .imageblock.text-left{
+  align-items: flex-start;
+}
+</style></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_was_ist_in_schritt_6_umzusetzen"><a class="anchor" href="#_was_ist_in_schritt_6_umzusetzen"></a>Was ist in Schritt 6 umzusetzen?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Der Schritt 6 umfasst die Darstellung der Organisationsprozesse und die Analyse</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>der einzuhaltenden Gesetze und Richtlinien (Compliance),</p>
+</li>
+<li>
+<p>der Prozessverfügbarkeit (Business Impact Analyse (BIA)),</p>
+</li>
+<li>
+<p>der Informationen in Bezug auf die Sicherheitsziele (Schutzbedarfsfeststellung (SBF)).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Den kritischen Prozessen sind dann die notwendigen Anwendungen, IT-Assets und Infrastrukturen zuzuordnen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wie_unterstützt_xmera_omnia"><a class="anchor" href="#_wie_unterstützt_xmera_omnia"></a>Wie unterstützt xmera Omnia?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>xmera Omnia bietet die Funktionalität zur Abbildung der in Schritt 6 geforderten Geschäftsprozessanalyse. Dabei können die Geschäftsprozesse und die zugehörigen Informationen abgebildet werden, um auf dieser Basis die Schutzbedarfsfeststellung durchzuführen.</p>
+</div>
+<div class="sect2">
+<h3 id="_geschäftsprozesse"><a class="anchor" href="#_geschäftsprozesse"></a>Geschäftsprozesse</h3>
+<div class="paragraph">
+<p>Geschäftsprozesse werden in xmera Omnia als Objekte dargestellt. Hierfür ist die Objektklasse <em>Prozess</em> vordefiniert und kann nach Bedarf angepasst werden. Über den hierarchischen Aufbau der Objekte können relevante Prozesse der Ablauforganisation abgebildet werden.</p>
+</div>
+<div class="paragraph">
+<p>Optional können dann die für den Betrieb des Prozesses notwendigen Informationsobjekte zugeordnet werden.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_informationen"><a class="anchor" href="#_informationen"></a>Informationen</h3>
+<div class="paragraph">
+<p>Informationen sind die primären Assets einer Organisation. Sie dienen als Bindeglied zwischen Prozess und Anwendung. Der Prozess beschreibt eine Handlung. Eine Information kann sowohl zur Durchführung dieser Handlung notwendig, als auch ihr Erzeugnis sein.</p>
+</div>
+<div class="paragraph">
+<p>Bei der Erfassung von Informationen kann auf Informationsklassen zurückgegriffen werden, die eine Grundkonfiguration im Bereich der Schutzbedarfsfestlegung aber auch des Datenschutzes ermöglichen.</p>
+</div>
+<div class="paragraph">
+<p>Der Schutzbedarf der Information wird durch die Prozesseigner definiert. Dieser wird über die logischen Verknüpfungen zu den für die Informationsverarbeitung notwendigen sekundären Assets vererbt.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_schutzbedarfsfeststellung"><a class="anchor" href="#_schutzbedarfsfeststellung"></a>Schutzbedarfsfeststellung</h3>
+<div class="paragraph">
+<p>Die Schutzbedarfsfeststellung in xmera Omnia ermöglicht die Beurteilung des Schutzbedarfs anhand eines Fragenkatalogs. Dieser Fragenkatalog kann individuell angepasst werden.</p>
+</div>
+<div class="paragraph">
+<p>Somit lässt sich zum Beispiel direkt durch die Prozesseigner der Schutzbedarf für die von ihnen benötigten Informationen ermitteln. Aufwendige Interviews entfallen.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logische_strukturen"><a class="anchor" href="#_logische_strukturen"></a>Logische Strukturen</h3>
+<div class="paragraph">
+<p>Die logischen Strukturen in xmera Omnia bilden die Abhängigkeiten der Objekte untereinander ab. In Schritt 6 können die Informationen mit den verarbeitenden Anwendungen, die benötigte IT-Infrastruktur oder auch mit der Gebäudeinfrastruktur verbunden werden. Nähers dazu in Schritt 7 » IT-Struktur analysieren.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wo_finde_ich_beispiele_in_der_demo"><a class="anchor" href="#_wo_finde_ich_beispiele_in_der_demo"></a>Wo finde ich Beispiele in der Demo?</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_prozesse"><a class="anchor" href="#_prozesse"></a>Prozesse</h3>
+<div class="videoblock">
+<div class="content">
+<video src="_images/prozessobjekt.mp4" width="950" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_informationen_2"><a class="anchor" href="#_informationen_2"></a>Informationen</h3>
+<div class="videoblock">
+<div class="content">
+<video src="_images/informationsobjekt.mp4" width="950" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_schutzbedarfanalyse"><a class="anchor" href="#_schutzbedarfanalyse"></a>Schutzbedarfanalyse</h3>
+<div class="videoblock">
+<div class="content">
+<video src="_images/schutzbedarf_schutzbedarfanalyse.mp4" width="950" controls>
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-wrap">
+    <aside class="footer-widget-wrap widget-area widget-area-default cf" role="complementary">
+
+      <div id="footer-widget-1" class="footer-widget">
+        <section id="custom_html-6" class="widget_text widget widget_custom_html">
+          <div class="textwidget custom-html-widget"><span style="color:#a8a7a7;"><b style="font-size:1.25rem">xmera</b><span
+                style="color:#f3f2f2;padding-left: 0.5rem;">WERTE SCHÜTZEN</span></span></div>
+        </section>
+      </div>
+    </aside>
+    <div class="footer-menu-wrap">
+      <nav id="footer-nav navbar">
+        <div class="navbar-end">
+          <div class="navbar-item"><a href="https://xmera.de/impressum/">Impressum</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/datenschutz/">Datenschutz</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/einsatz-von-cookies/">Cookies</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/bildnachweis/">Bildnachweise</a></div>
+        </div>
+      </nav>
+    <nav id="social-nav">
+  <a href="https://www.xing.com/pages/xmera-solutions"><i class="fa fa-xing" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/company/xmera-solutions"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+  <a href="https://github.com/xmera-circle"><i class="fa fa-github" aria-hidden="true"></i></a>
+</nav>    </div>
+    <div class="site-info">
+      <span>© 2017 - 2022 xmera.</span>
+    </div>
+  </div>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+  </body>
+</html>
