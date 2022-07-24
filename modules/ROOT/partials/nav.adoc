@@ -2,7 +2,7 @@
 
 .xmera Omnia Guide
 * xref:xmera-omnia-guide:anwenderhandbuch:bediengrundlagen.adoc[Anwenderhandbuch]
-* xref:xmera-omnia-guide:admin-handbuch:objektklassen.adoc[Adminhandbuch]
+* xref:xmera-omnia-guide:adminhandbuch:objektklassen.adoc[Adminhandbuch]
 
 .xmera Omnia Demo Guide
 * xref:xmera-omnia-demo-guide:einfuehrung:index.adoc[Einführung]
