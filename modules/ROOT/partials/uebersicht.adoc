@@ -17,6 +17,7 @@ pass:[<div class="overview">
   </div>
   <div class="responsive">
     <div class="gallery">
+      <a href="/xmera-omnia-guide/adminhandbuch/objektklassen.html">
       <img src="_images/icon-adminhandbuch.png" alt="xmera Omnia Adminhandbuch" width="300" height="300">
       <div class="desc">xmera Omnia Adminhandbuch » IN ARBEIT</div>
     </div>
