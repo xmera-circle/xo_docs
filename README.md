@@ -2,7 +2,7 @@
 
 Developer project of xmera Omnia Documentation
 
-![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-0.3.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v3.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
+![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-0.4.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v3.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
 
 The xmera Omnia Documentation is written in AsciiDoc and convertible into HTML by Antora or converitble into a pdf file.
 
