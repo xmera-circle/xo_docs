@@ -14,7 +14,7 @@ div.gallery:hover:not(.unreleased) {
   opacity: 0.5;
 }
 div.gallery img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 div.gallery.unreleased img {  
@@ -37,10 +37,13 @@ div.desc span {
 * {
   box-sizing: border-box;
 }
+#_fehler_in_der_dokumentation_melden {
+  display: block ruby;
+}
 .responsive {
   padding: 0 25px;
   float: left;
-  width: 24.99999%;
+  width: 33.3333%;
 }
 @media only screen and (max-width: 700px) {
   .responsive {

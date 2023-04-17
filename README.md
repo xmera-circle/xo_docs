@@ -2,7 +2,7 @@
 
 Developer project of xmera Omnia Documentation
 
-![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-0.5.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v3.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
+![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-0.6.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v3.7.z-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
 
 The xmera Omnia Documentation is written in AsciiDoc and convertible into HTML by Antora or converitble into a pdf file.
 
@@ -21,7 +21,7 @@ So you need to install:
 For doing so, make sure you run the latest Node.js LTS version:
 
     node --version
-    v18.12.1
+    v18.13.0
 
 Follow the [instructions for Linux](https://docs.antora.org/antora/latest/install/linux-requirements/#upgrade-node) in order to upgrade to the latest LTS version of node.
 
@@ -55,4 +55,4 @@ All notable changes to this project will be reported in the [changelog](https://
 
 ## License
 
-xmera Omnia Documentation © 2022 by [xmera Solutions GmbH](https://xmera.de) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
+xmera Omnia Documentation © 2022-2023 by [xmera Solutions GmbH](https://xmera.de) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
