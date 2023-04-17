@@ -7,13 +7,13 @@
 
 [.subtitle]#https://xmera.de/xmera-omnia-managementsystem[xmera Omnia] Ihre Lösung zur Unterstützung des Informationssicherheits- und Datenschutzmanagements.#
 
-Sie können xmera Omnia als https://xmera.de/community-support/[Community Edition] selbst zusammenbauen und auf Ihrem Linux Server installieren oder für einen https://xmera.de/live-vorfuehrung/[Live-Termin] unserem Vertrieb kontaktieren.
+Sprechen Sie uns gerne für einen https://xmera.de/live-vorfuehrung/[Live-Termin] an.
 
 include::partial$uebersicht-css.adoc[]
 
 include::partial$uebersicht.adoc[]
 
-== Fehler in der Dokumentation melden & Wie Sie mitmachen können
+== Fehler in der Dokumentation melden
 
 Wenn Sie in einem der Handbücher einen Fehler finden oder ein Thema fehlt, freuen wir uns über eine Fehlermeldung von Ihnen. 
 
