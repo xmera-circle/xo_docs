@@ -24,7 +24,7 @@ ui:
 
 output:
   clean: true
-  dir: bundle
+  dir: build
 
 antora:
   extensions:
