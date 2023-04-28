@@ -408,6 +408,9 @@ video,
 <li>
 <p>Markdown</p>
 </li>
+<li>
+<p>CommonMark Markdown (GitHub Flavored) - experimental</p>
+</li>
 </ul>
 </div></div></td>
 </tr>
@@ -619,7 +622,7 @@ Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Benutzerdefinierte Felder bei der Registrierung abfragen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eigene Felder bei der Registrierung abfragen</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Sind <em>Eigene Felder</em> für Benutzer definiert, können diese dem Anwender bei der Registrierung angezeigt werden.</p>
 </div></div></td>
@@ -684,15 +687,12 @@ Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
 <p>optional » Die 2-Faktor-Authentifizierung steht dem Anwender optional zur Verfügung.</p>
 </li>
 <li>
+<p>erforderlich für Administratoren » Die 2-Faktor Authentifizierung ist für Administratoren erforderlich. Für alle anderen Anwender ist sie optional.</p>
+</li>
+<li>
 <p>erforderlich » Die 2-Faktor-Authentifizierung muss vom Anwender verwendet werden.</p>
 </li>
 </ul>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Erlaube OpenID-Anmeldung und -Registrierung</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Die Anmeldung über einen OpenID-Provider wird erlaubt.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -803,6 +803,24 @@ Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spaltenauswahl</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Standardauswahl der Tabellenspalten für das Format <em>Liste</em>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standardabfrage</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Standardabfrage für die Darstellung der Objekte, die allen Benutzern angezeigt wird.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Jeder Benutzer kann diese Einstellung für sich in seinem Konto anpassen.
+</td>
+</tr>
+</table>
 </div></div></td>
 </tr>
 </tbody>
@@ -1087,6 +1105,25 @@ Der Aufgaben-Fortschritt der übergeordneten Aufgabe ist unabhängig von den unt
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spaltenauswahl</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Legt fest, welche Informationen in der Aufgabenliste angezeigt werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standardabfrage</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Standardabfrage für die Darstellung von Aufgaben, die allen Benutzern angezeigt wird.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Jeder Benutzer kann diese Einstellung für sich in seinem Konto anpassen.
+Zusätzlich kann für jedes Objekt eine eigene Standardabfrage konfiguriert werden.
+</td>
+</tr>
+</table>
 </div></div></td>
 </tr>
 </tbody>
