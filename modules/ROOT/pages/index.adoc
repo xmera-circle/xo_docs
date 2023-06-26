@@ -5,7 +5,7 @@
 :web-xmera: https://xmera.de
 :page-toclevels: -1
 
-[.subtitle]#https://xmera.de/[xmera Omnia] xmera Omnia bietet Dir eine Plattform, auf der Du Informationssicherheitsmanagement und IT-Betrieb intelligent vereinst.#
+[.subtitle]#https://xmera.de/[xmera Omnia] bietet Dir eine Plattform, auf der Du Informationssicherheitsmanagement und IT-Betrieb intelligent vereinst.#
 
 Spreche uns gerne für einen https://xmera.de/live-termin/[Live-Termin] an.
 
