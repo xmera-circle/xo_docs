@@ -19,6 +19,6 @@ Wenn Du in einem der Handbücher einen Fehler findest oder ein Thema fehlt, freu
 
 Sich an der Dokumentation zu beteiligen ist sehr einfach, da der gesamte Code auf GitHub verfügbar ist und dort bearbeitet werden kann.
 
-Fehlermeldungen kannst Du direkt auf https://github.com/xmera-circle[GitHub] oder auf unserer Entwicklungsplattform https://circle.xmera.de/projects/xmera-omnia-documentation[xmera Circle] einstellen. xmera Omnia Nutzer mit https://xmera.de/subskription/[Subskription] können eine Fehlermeldung über das https://service.xmera.de[Serviceportal] an uns richten.
+Fehlermeldungen kannst Du direkt auf https://github.com/xmera-circle[GitHub] oder auf unserer Entwicklungsplattform https://circle.xmera.de/projects/xmera-omnia-documentation[xmera Circle] einstellen. xmera Omnia Nutzer mit Subskription können eine Fehlermeldung über das https://service.xmera.de[Serviceportal] an uns richten.
 
 include::partial$lizenz.adoc[]
