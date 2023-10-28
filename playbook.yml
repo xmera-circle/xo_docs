@@ -12,6 +12,7 @@ content:
     branches:
     - master
     - '3.7'
+    - '4.0'
   - url: ../xo_demo_guide
     branches:
     - master
