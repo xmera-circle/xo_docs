@@ -116,7 +116,7 @@
     <a class="nav-link" href="kalender.html">Kalender</a>
   </li>
   <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="aufgaben-synchronisation.html">Aufgaben-Synchronisation</a>
+    <a class="nav-link" href="aufgaben-synchronisation.html">Aufgabensynchronisation</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="tabellen.html">Tabellen</a>
@@ -190,7 +190,7 @@
     <a class="nav-link" href="../adminhandbuch/support.html">Support</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../adminhandbuch/plugins.html">Konfigurierbare Plugins</a>
+    <a class="nav-link" href="../adminhandbuch/plugins.html">Plugins</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../adminhandbuch/informationen.html">Informationen</a>
@@ -237,6 +237,9 @@
           <a href="bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.0/anwenderhandbuch/bediengrundlagen.html">4.0</a>
+        </li>
+        <li class="version">
           <a href="../../3.7/anwenderhandbuch/bediengrundlagen.html">3.7</a>
         </li>
       </ul>
@@ -261,6 +264,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="objekte.html">latest</a>
+    <a class="version" href="../../4.0/anwenderhandbuch/objekte.html">4.0</a>
     <a class="version" href="../../3.7/anwenderhandbuch/objekte.html">3.7</a>
   </div>
 </div>
@@ -323,21 +327,21 @@ video,
 <h2 id="_funktion_der_objekte"><a class="anchor" href="#_funktion_der_objekte"></a>Funktion der Objekte</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Objekte sind das zentrale Ordnungselement in xmera Omnia. Eine ihrer Hauptaufgabe ist die Bereitstellung des Assetsregisters im Rahmen des Informationssicherheitsmanagementsystems (ISMS).</p>
+<p>Objekte sind das zentrale Ordnungselement in xmera Omnia. Eine ihrer Hauptaufgaben ist die Bereitstellung des Assetsregisters im Rahmen des Informationssicherheitsmanagementsystems (ISMS).</p>
 </div>
 <div class="paragraph">
-<p>Objekte zeichnen sich durch folgende Eigenschaften aus:</p>
+<p>Objekte zeichnen sich durch folgende Funktionen aus:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Objekte können hierarchisch strukturiert werden,</p>
+<p>Objekte können hierarchisch angeordnet werden,</p>
 </li>
 <li>
 <p>Objekten können Mitglieder mit Rollen zugeordnet werden,</p>
 </li>
 <li>
-<p>Objekte können Funktionsmodule bereitstellen,</p>
+<p>Objekte stellen Funktionsmodule bereit,</p>
 </li>
 <li>
 <p>Objekte gehören einer Objektklasse an,</p>
@@ -356,7 +360,10 @@ video,
 <h2 id="_objektübersicht"><a class="anchor" href="#_objektübersicht"></a>Objektübersicht</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die Objektdaten werden in der Objektübersicht dargestellt (siehe Kasten 3 im nachfolgenden Bild):</p>
+<p>Jedes Objekt verfügt über eine Übersichtsseite. Welche Elemente die Objektübersicht enthält, hängt von der konkreten Konfiguration eines Objektes ab.</p>
+</div>
+<div class="paragraph">
+<p>Das nachfolgende Bild zeigt typische Elemente an:</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -365,12 +372,13 @@ video,
 </div>
 <div class="paragraph">
 <p>&#10122; Objektbezeichung (Hierarchiepfad und <a href="#_objektname">Objektname</a>)<br>
-&#10123; <a href="#_objektbeschreibung">Objektbeschreibung</a><br>
+&#10123; <a href="#_objektbeschreibung">Objektbeschreibung</a> (hier: grafisch, Text ist ebenfalls möglich)<br>
 &#10124; Spezifische <a href="#_objektdaten">Objektdaten</a> (Eigene Felder)<br>
 &#10125; <a href="aufgaben.html" class="xref page">Aufgaben</a><br>
-&#10126; <a href="#_mitglieder_verwalten">Mitglieder</a> des Objekts mit ihren Rollen<br>
+&#10126; <a href="#Mitglieder verwalten">Mitglieder</a> des Objekts mit ihren Rollen<br>
 &#10127; <a href="#_objekthierarchie">Unterobjekte</a> (Hierarchie)<br>
-&#10128; <a href="#_objektverknüpfungen">Verknüpfte Objekte</a> (logische Zusammenhänge)</p>
+&#10128; <a href="#_objektverknüpfungen">Verknüpfte Objekte</a> (logische Zusammenhänge)<br>
+&#10129; <a href="tabellen.html" class="xref page">Tabellen</a> (hier: Schutzbedarf)</p>
 </div>
 </div>
 </div>
@@ -378,13 +386,13 @@ video,
 <h2 id="_objekthierarchie"><a class="anchor" href="#_objekthierarchie"></a>Objekthierarchie</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die Objekthierarchie bietet die Möglichkeit Arbeitsbereiche, Verantwortlichkeiten/Organisationen als auch Sicherheitszonen/Cluster strukturiert darzustellen. Die hierarchische Struktur wird durch die Festlegung des übergeordneten Objekts bei der <a href="#Objekte erstellen und konfigurieren">Erstellung/Konfiguration des Objekts</a> definiert. So entsteht ein Objektbaum, der sich in der Listenanzeige der <em>Objektübersicht</em> darstellen läßt.</p>
+<p>Mit Hilfe eines hierarchischen Aufbaus der Objekte hast Du die Möglichkeit Arbeitsbereiche, Verantwortlichkeiten/Organisationen oder auch Sicherheitszonen/Cluster strukturiert darzustellen. Die hierarchische Struktur legst Du fest, indem Du das übergeordnete Objekt des Dir vorliegenden Objektes definierst. Diese Einstellung nimmst Du  am Besten bei der <a href="#Objekte erstellen und konfigurieren">Erstellung/Konfiguration des Objektes</a> vor. Sie lässt sich auch später vornehmen oder ändern. So entsteht ein Objektbaum, der sich in der Listenanzeige auf der Übersichtsseite aller Objekte (siehe Top-Menü) beispielsweise so darstellen läßt:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_hierarchiebaum_undefined.png" alt="Objekthierarchie"></span></p>
 </div>
 <div class="paragraph">
-<p>In der <em>Objektübersicht</em> wird die Struktur in der Objektbezeichung, wie im nachfolgenden Bild an Pkt. &#10122; zu sehen, mit den Links zu den übergeordneten Objekten dargestellt.</p>
+<p>Auf der <em>Übersicht</em> eines Objektes wird Dir die Position des aktuellen Objekts im Hierarchiebaum angezeigt. Das nachfolgenden Bild zeigt Dir dafür an Pkt. &#10122; ein Beispiel. Die übergeordneten Objekte im dargestellten Pfad werden als Link dargestellt.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/objektuebersicht_hierarchie_undefined.png" alt="Objekthierarchie"></span></p>
@@ -422,10 +430,10 @@ video,
 </div>
 </div>
 <div class="sect1">
-<h2 id="_objektmitglieder"><a class="anchor" href="#_objektmitglieder"></a>Objektmitglieder</h2>
+<h2 id="_teammitglieder"><a class="anchor" href="#_teammitglieder"></a>Teammitglieder</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Die <a href="#_mitglieder_verwalten">Verwaltung von Mitgliedern</a> und deren Rollen ist nicht zentral für die Anwendung definiert, sondern erfolgt in jedem Objekt einzeln.</p>
+<p>Die <a href="#Mitglieder verwalten">Verwaltung von Mitgliedern</a> und deren Rollen ist nicht zentral für die Anwendung definiert, sondern erfolgt in jedem Objekt.</p>
 </div>
 <div class="paragraph">
 <p>Zentral verwaltet werden</p>
@@ -481,7 +489,7 @@ Wird die Auswahl <em>Neues Objekt</em> oder <em>Neues Unterobjekt</em> nicht ang
 </table>
 </div>
 <div class="paragraph">
-<p>Es wird dann die Konfigurationsmaske des neuen Objekts geöffnet. Die wichtigsten Punkte werden in den folgenden Unterkapiteln beschrieben.</p>
+<p>Bei Klick auf einem der Button wird eine Konfigurationsmaske für das neue Objekt geöffnet. Die wichtigsten Punkte werden in den folgenden Unterkapiteln beschrieben.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -615,7 +623,7 @@ Die mit <span class="red">*</span> gekennzeichneten Felder sind Pflichtfelder un
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_import_feldzuordnung.png" alt="Feldzuordnung für den Objektimport"></span></p>
 </div>
 <div class="paragraph">
-<p>Dann auf <em>Importieren</em> klicken, um den Import zu starten</p>
+<p>Dann auf <em>Importieren</em> klicken, um den Import zu starten.</p>
 </div>
 </dd>
 <dt class="hdlist1">Import durchführen</dt>
@@ -642,7 +650,7 @@ Die mit <span class="red">*</span> gekennzeichneten Felder sind Pflichtfelder un
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Der Importprozess wird nicht abgebrochen, wenn eine Zeile der CSV-Datei nicht fehlerfrei in ein Objekt überführt werden kann. Die nicht importierten Zeilen werden in Form ihrer Positionsnummer in der Fehlermeldung angezeigt und müssen separat in einem zweiten Versuch importiert werden.
+Der Importprozess wird auch dann fortgesetzt, wenn eine oder mehrere Zeilen der CSV-Datei fehlerhaft sind. Die nicht importierten Zeilen werden in Form ihrer Positionsnummer in der Fehlermeldung angezeigt und müssen nach Korrektur separat in einem zweiten Versuch importiert werden.
 </td>
 </tr>
 </table>
@@ -656,15 +664,15 @@ Der Importprozess wird nicht abgebrochen, wenn eine Zeile der CSV-Datei nicht fe
 <div class="sect2">
 <h3 id="_objektklassen"><a class="anchor" href="#_objektklassen"></a>Objektklassen</h3>
 <div class="paragraph">
-<p>Objektklassen beschreiben einen typischen Aufbau eines Objekts. Dieser Aufbau wird im <em>Objektklassen Master</em> durch den Administrator gepflegt. Anpassbar sind beispielsweise</p>
+<p>In einer Objektklasse werden Aufbau und ggf. Inhalt für Objekte, die auf Basis dieser Klasse generiert werden sollen, vordefiniert. Dieser Aufbau wird im <em>Objektklassen Master</em> durch den Administrator gepflegt. Anpassbar sind beispielsweise</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Metadaten zu einem Objekt/Asset,</p>
+<p>Metadaten zu einem Objekt,</p>
 </li>
 <li>
-<p>Schutzbedarfsfeststellungen für Prozesse oder Informationsobjekte,</p>
+<p>Schutzbedarfsfeststellungen für Informationsobjekte, Prozesse oder Anwendungen,</p>
 </li>
 <li>
 <p>Sicherheitsanforderungen,</p>
@@ -673,16 +681,13 @@ Der Importprozess wird nicht abgebrochen, wenn eine Zeile der CSV-Datei nicht fe
 <p>Gefährdungen,</p>
 </li>
 <li>
-<p>Standardaufgaben,</p>
-</li>
-<li>
 <p>Wiederkehrende Aufgaben,</p>
 </li>
 <li>
-<p>Wiki-Inhalte</p>
+<p>Wiki-Seiten und Inhalte,</p>
 </li>
 <li>
-<p>Tabellen wie bspw. Gerätelisten, Raumlisten, usw.</p>
+<p>Tabellen wie bspw. Gerätelisten, Raumlisten, usw.,</p>
 </li>
 <li>
 <p>diverse Aufgabenformulare,</p>
@@ -702,16 +707,19 @@ Der Importprozess wird nicht abgebrochen, wenn eine Zeile der CSV-Datei nicht fe
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Objektklassen werden zusätzlich als Parameter in einigen Objektmodulen und globalen Systemeinstellungen benötigt. Beispiele hierfür sind das Modul <em>Aufgaben</em>, <em>Aufgaben-Synchronisation</em>  und das Modul <em>Tabellen</em>.
+Objektklassen werden zusätzlich als Parameter in einigen Objektmodulen und globalen Systemeinstellungen benötigt. Beispiele hierfür sind das Modul <em>Aufgaben</em>, <em>Aufgabensynchronisation</em>  und das Modul <em>Tabellen</em>.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Die Vorkonfiguration wird nach dem ersten Speichern beim Anlegen eines neuen Objekts an dieses übertragen. Die Vorkonfiguration von Objektklassen erfolgt aus der Administration der Anwendung.</p>
+<p>Bevor ein Objekt von einer Objektklasse abgeleitet werden kann, müssen die Pflichtfelder, <em>Unterobjekt von</em> und <em>Benutzer erben</em> ausgefüllt werden. Nach dem Speichern, werden die Konfiguration und Inhalte der Objektklasse auf das neue Objekt übertragen.</p>
 </div>
 <div class="paragraph">
-<p>Wird ein Objekt von einer Objektklasse abgeleitet müssen lediglich die Pflichtfelder, <em>Unterobjekt von</em> und <em>Benutzer erben</em> ausgefüllt werden.  Wird ein Objekt nicht von einer Objektklasse abgeleitet, erfolgt die Objektkonfiguration manuell.</p>
+<p>Die Vorkonfiguration von Objektklassen erfolgt aus der Administration der Anwendung.</p>
+</div>
+<div class="paragraph">
+<p>Soll ein Objekt nicht von einer Objektklasse abgeleitet werden, muss es manuell konfiguriert werden.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -793,7 +801,7 @@ Mögliche Textauszeichnungssprachen sind Markdown und Textile. Welcher Editor ve
 <div class="sect2">
 <h3 id="_öffentlich"><a class="anchor" href="#_öffentlich"></a>Öffentlich</h3>
 <div class="paragraph">
-<p>Mit setzen des Feldes wird das Objekt öffentlich. Alle Nutzer, die Zugang zu xmera Omnia haben, können Informationen des Objekts sehen. Ein nicht angemeldeter Nutzer ist automatisch mit den  Rechten der Rolle <em>Anonym</em> ausgestattet. Jeder angemeldete Benutzer erhält automatisch die Rollenrechte der Rolle <em>Nichtmitglied</em>.</p>
+<p>Mit Setzen des Feldes wird das Objekt öffentlich. Alle Nutzer, die Zugang zu xmera Omnia haben, können Informationen des Objekts sehen. Ein nicht angemeldeter Nutzer ist automatisch mit den  Rechten der Rolle <em>Anonym</em> ausgestattet. Jeder angemeldete Benutzer erhält automatisch die Rollenrechte der Rolle <em>Nichtmitglied</em>.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -838,7 +846,7 @@ Der Administrator kann in der Konfiguration vorgeben, dass eine Anmeldung zwinge
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Das Objekt mit seiner Objektklasse muss, damit die Objektverküpfungen aktiviert werden können, im xmera Omnia bekannt sein. Damit wird die Auswahl erst nach dem ersten Speichern des Objekts angezeigt.
+Das Objekt mit seiner Objektklasse muss, damit die Objektverküpfungen aktiviert werden können, im xmera Omnia bekannt sein. Daher wird die Auswahl für mögiche Verküpfungen erst nach dem ersten Speichern des Objekts angezeigt.
 </td>
 </tr>
 </table>
@@ -850,13 +858,13 @@ Das Objekt mit seiner Objektklasse muss, damit die Objektverküpfungen aktiviert
 <p><span class="image"><img src="_images/anwenderhandbuch/verknuepfung_konfiguration_undefined.png" alt="Verknüpfung mit Diensten (Objekte)"></span></p>
 </div>
 <div class="paragraph">
-<p>Zu sehen sind die bereitgestellten Dienste (Objekte einer Objektklasse), die mit dem Objekt in der Konfiguration verknüpft werden können.</p>
+<p>Zu sehen sind die verfügbaren Dienste (Objekte einer Objektklasse), die mit dem Objekt verknüpft werden können.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_objektmodule"><a class="anchor" href="#_objektmodule"></a>Objektmodule</h3>
 <div class="paragraph">
-<p>Objektmodule sind die Werkzeuge im xmera Omnia. Nicht in jedem Objekt werden alle Module benötigt. Damit die Anwendung nicht zu unübersichtlich wird, können die Module zu jedem Objekt ein und ausgeschaltet werden.</p>
+<p>Einige Funktionen sind im xmera Omnia in Modulen zusammengefasst. Nicht in jedem Objekt werden alle Module benötigt. Damit die Anwendung nicht zu unübersichtlich wird, können die Module in jedem Objekt ein- und ausgeschaltet werden.</p>
 </div>
 <div class="paragraph">
 <p>Ein Beispiel ist im folgenden Bild zu sehen:</p>
@@ -865,7 +873,7 @@ Das Objekt mit seiner Objektklasse muss, damit die Objektverküpfungen aktiviert
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_konfig_module_auswahl.png" alt="Module ein- und ausschalten"></span></p>
 </div>
 <div class="paragraph">
-<p>Die aktivierten Module werden als Reiter in den Objektmasken angezeigt. Für die oben dargestellte Auswahl ergibt sich dann folgende Menüleiste:</p>
+<p>Die aktivierten Module werden im Menü des Objekts angezeigt. Für die oben dargestellte Auswahl ergibt sich dann folgende Menüleiste:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_konfig_module_darstellung.png" alt="Aktivierte Module in Menüleiste"></span></p>
@@ -877,23 +885,25 @@ Das Objekt mit seiner Objektklasse muss, damit die Objektverküpfungen aktiviert
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Wird ein Modul deaktiviert, in dem bereits Daten erfasst wurden, so werden die bereits erfassten Daten nicht gelöscht. Wird das Modul wieder aktiviert, so werden diese Daten wieder angezeigt.
+Wird ein Modul deaktiviert, in dem bereits Daten erfasst wurden, so werden die bereits erfassten Daten nicht gelöscht. Wird das Modul wieder aktiviert, werden diese Daten wieder angezeigt.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_mitglieder_verwalten"><a class="anchor" href="#_mitglieder_verwalten"></a>Mitglieder verwalten</h3>
+<h3 id="_teammitglieder_verwalten"><a class="anchor" href="#_teammitglieder_verwalten"></a>Teammitglieder verwalten</h3>
 <div class="paragraph">
-<p>Über den Reiter <em>Mitglieder</em> der Konfigurationsseite eines Objekts lassen sich Mitgliederrollen verwalten.</p>
+<p>Über den Tab <em>Teammitglieder</em> der Konfigurationsseite eines Objekts lassen sich Mitgliederrollen verwalten.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_konfig_mitglieder_liste.png" alt="Konfiguration Mitglieder"></span></p>
 </div>
 <div class="paragraph">
-<p>In der Liste sind, siehe Punkt &#10122;, alle Mitglieder und Gruppen mit ihren Rollen gelistet. Über den Button &#10123; können neue Mitglieder mit aufgenommen werden und mit der Bearbeitung bzw. dem Löschen &#10124; lassen sich die Einträge verändern oder entfernen.<br>
-Nutzern mit Administrationsrechten wird der Button Administration &#10125; angeboten. Über diesen Button kommt der Administrator direkt in die Benutzerverwaltung.</p>
+<p>In der Liste (&#10122;) werden alle aktuellen Teammitglieder und Gruppen mit ihren Rollen angezeigt. Über den Button (&#10123;) können neue Mitglieder aufgenommen werden. Durch <em>Bearbeiten</em> oder <em>Löschen</em> (&#10124;) lassen sich Einträge verändern oder entfernen.</p>
+</div>
+<div class="paragraph">
+<p>Nutzern mit Administrationsrechten wird der Button <em>Administration</em> (&#10125;) angeboten. Über diesen Button kommt der Administrator direkt in die Benutzerverwaltung.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -914,16 +924,16 @@ Aus einem überlagerten Objekt geerbte Mitglieder und deren Rollen können nicht
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_konfig_mitglieder_neu.png" alt="neue Mitglieder hinzufügen"></span></p>
 </div>
 <div class="paragraph">
-<p>Für die Aufnahme von Mitgliedern sind die Benutzer bzw. die Gruppen auszuwählen, die aufgenommen werden sollen. Weiter ist die Rolle bzw. sind die Rollen auszuwählen, die Mitglieder in diesem Objekt haben sollen. Nur in der Kombination aus Benutzer/Gruppe mit der/den Rolle(n) können neue Mitglieder durch Klicken des Buttons <em>Hinzufügen</em> aufgenommen werden.</p>
+<p>Für die Aufnahme von Mitgliedern sind die gewünschten Benutzer oder Gruppen auszuwählen. Weiter ist mindestens eine Rolle auszuwählen. Nur in der Kombination aus Benutzer/Gruppe mit der/den Rolle(n) können neue Mitglieder durch Klicken des Buttons <em>Hinzufügen</em> aufgenommen werden.</p>
 </div>
 <div class="paragraph">
-<p>Sollen Rollen eines Mitglieds oder einer Gruppe verändert werden, so erfogt das über den Button <em>Bearbeiten</em>.<br></p>
+<p>Sollen Rollen eines Mitglieds oder einer Gruppe verändert werden, so erfolgt das über den Button <em>Bearbeiten</em>.<br></p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_konfig_mitglieder_bearbeiten.png" alt="Rollen von Mitgliedern bearbeiten"></span></p>
 </div>
 <div class="paragraph">
-<p>Es wird der Listeintrag des ausgewählten Mitarbeiters aufgeklappt und durch An- oder Abwahl können die Rollen verändert werden. Rollen, die ein Mitglied von einer Gruppe oder dem vorgelagerten Objekt geerbt hat, können nicht verädert werden. Dieses ist in der Maske gekennzeichnet. Werden alle Rollen eines Mitglieds gelöscht, wird dieses Mitglied gelöscht.</p>
+<p>Es wird der Eintrag des ausgewählten Mitarbeiters aufgeklappt. Durch An- oder Abwahl können die Rollen verändert werden. Rollen, die ein Mitglied von einer Gruppe oder dem vorgelagerten Objekt geerbt hat, können nicht verädert werden. Werden alle Rollen eines Mitglieds gelöscht, wird dieser Anwender als Mitglied in dem Objekt entfernt.</p>
 </div>
 </div>
 </div>
@@ -941,7 +951,7 @@ Aus einem überlagerten Objekt geerbte Mitglieder und deren Rollen können nicht
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Die Anzahl der Tage, im Standard 10, die chronologisch dargestellt werden, kann in der Systemkonfiguration angepasst werden.
+Die Anzahl der Tage, die chronologisch dargestellt werden, kann in der Systemkonfiguration angepasst werden. Der Standardwert beträgt 10 Tage.
 </td>
 </tr>
 </table>
@@ -952,7 +962,7 @@ Die Anzahl der Tage, im Standard 10, die chronologisch dargestellt werden, kann 
 </div>
 </div>
 <div class="paragraph">
-<p>In der Sidebar besteht die Möglichkeit die Aktivitäten zu filtern. So können die Aktivitäten durch Auswahl der Module, die betrachtet werden sollen, eingeschränkt werden. Weiter können die angezeigten Aktivitäten auf eine Person eingegrenzt werden. Änderungen werden mit dem Button <em>Anwenden</em> übernommen. Die Liste der Aktivitäten wird danach neu aufgebaut.</p>
+<p>In der Seitenleiste besteht die Möglichkeit Aktivitäten zu filtern. So kann die Ansicht von Aktivitäten auf bestimmte Module eingeschränkt werden. Weiter können die angezeigten Aktivitäten auf eine Person eingegrenzt werden. Änderungen werden mit dem Button <em>Anwenden</em> übernommen. Die Liste der Aktivitäten wird danach neu aufgebaut.</p>
 </div>
 <div class="paragraph">
 <p>Die Aktivitäten sind als Links dargestellt, so dass direkt zu den Änderungen gesprungen werden kann.</p>
