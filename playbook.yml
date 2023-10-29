@@ -2,31 +2,21 @@ site:
   title: xmera Omnia Dokumentation
   url: https://docs.xmera.de
   start_page: xmera-omnia-dokumentation:ROOT:index.adoc
-
 content:
   sources:
   - url: .
-    branches:
-    - HEAD
+    branches: HEAD
   - url: ../xo_guide
-    branches:
-    - master
-    - '3.7'
-    - '4.0'
+    branches: [master, 4.0, 3.7]
   - url: ../xo_demo_guide
-    branches:
-    - master
-    - '3.7'
-
+    branches: [master, 3.7]
 ui:
   bundle:
     url: https://github.com/xmera-circle/antora-ui-omnia/releases/download/1.0.0/ui-bundle.zip
     snapshot: true
-
 output:
   clean: true
   dir: build
-
 antora:
   extensions:
   - require: '@antora/lunr-extension'
