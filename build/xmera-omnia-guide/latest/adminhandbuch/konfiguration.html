@@ -237,6 +237,9 @@
           <a href="../anwenderhandbuch/bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.1/anwenderhandbuch/bediengrundlagen.html">4.1</a>
+        </li>
+        <li class="version">
           <a href="../../4.0/anwenderhandbuch/bediengrundlagen.html">4.0</a>
         </li>
         <li class="version">
@@ -264,6 +267,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="konfiguration.html">latest</a>
+    <a class="version" href="../../4.1/adminhandbuch/konfiguration.html">4.1</a>
     <a class="version" href="../../4.0/adminhandbuch/konfiguration.html">4.0</a>
     <a class="version" href="../../3.7/adminhandbuch/konfiguration.html">3.7</a>
   </div>
@@ -356,7 +360,7 @@ video,
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Objekte pro Seite</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Anzahl der Elemente auf Listenseiten. Die verschiedenen Werte werden Komma-getrennt aufgelistet.</p>
+<p>Anzahl der Elemente auf Listenseiten. Die verschiedenen Werte werden komma-getrennt aufgelistet. Standardwerte sind 25, 50 oder 100 Elemente pro Seite.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -374,7 +378,7 @@ video,
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hostname</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Die Basis URL für die Anwendung.</p>
+<p>Die Basis URL für die Anwendung. Sie wird in E-Mail für Links verwendet.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -408,7 +412,7 @@ video,
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Formatierten Text im Cache speichern</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Texte, die größer als 2 KB sind werden gecacht.</p>
+<p>Texte, die größer als 2 KB sind, werden gecacht.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -466,7 +470,7 @@ video,
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Das kann für die Ausführung von automatisierten Aufgaben relevant sein.
+Das kann für die Ausführung von automatisierten Aufgaben relevant sein, sie von einem anonymen Benutzer ausgeführt werden.
 </td>
 </tr>
 </table>
@@ -475,7 +479,7 @@ Das kann für die Ausführung von automatisierten Aufgaben relevant sein.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standardsprache für angemeldete Benutzer erzwingen</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Anonyme Benutzer bekommen Inhalte stets in Standardsprache präsentiert. Die Sprachauswahl wird für den Benutzer dann nicht angezeigt.</p>
+<p>Angemeldete Benutzer bekommen Inhalte stets in Standardsprache präsentiert. Die Sprachauswahl wird für den Benutzer in dem Fall nicht mehr angezeigt.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -511,19 +515,7 @@ Das kann für die Ausführung von automatisierten Aufgaben relevant sein.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Gravatar-Benutzerbilder benutzen</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Über den Haken kann die Gravatar-Funktion zugeschaltet. Im Normalfall nutzt die Funktion die Gravatare von gravatar.com. Es können aber auch andere Gravatarquellen in der <code>config/configuration.yml</code> oder <code>config/env.yml</code> eingestellt werden.<br></p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
-</td>
-</tr>
-</table>
+<p>Über das Kontrollkästchen kann die Gravatar-Funktion aktiviert werden. Im Normalfall nutzt die Funktion die Gravatare von gravatar.com. Es können aber auch andere Gravatarquellen in der <code>config/env.yml</code> eingestellt werden.<br></p>
 </div></div></td>
 </tr>
 <tr>
@@ -535,13 +527,13 @@ Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Vorschaubilder von Dateianhängen anzeigen</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Auswahl legt fest, ob ein Vorschaubild (bei bekannten Formaten) angezeigt wird oder nicht.</p>
+<p>Diese Option legt fest, ob ein Vorschaubild (bei bekannten Formaten) angezeigt wird oder nicht.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Größe der Vorschaubilder (in Pixeln)</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Legt die Größe des Vorschaubildes fest, wenn die Auswahl <em>Vorschaubilder von Dateianhängen anzeigen</em> gewählt wurde.</p>
+<p>Legt die Größe des Vorschaubildes fest, wenn die Auswahl <em>Vorschaubilder von Dateianhängen anzeigen</em> aktiviert wurde.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -607,7 +599,7 @@ Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
 <p>Manuelle Kontoaktivierung » Der Administrator erhält nach Übertragung der Registrierung des Anwenders eine E-Mail und muss dann den Anwender manuell freischalten.</p>
 </li>
 <li>
-<p>Automatische Kontoaktivierung » Der Account des Anwender wird mit der Registrierung des Anwenders direkt freigeschaltet.</p>
+<p>Automatische Kontoaktivierung » Der Account des Anwenders wird nach Registrierung direkt freigeschaltet.</p>
 </li>
 </ul>
 </div></div></td>
@@ -778,7 +770,7 @@ Diese Funktion wird aktuell nicht von der Content Security Policy unterstützt!
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rolle, die einem Nicht-Administrator zugeordnet wird, der ein Objekt erstellt</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Legt ein <em>Nicht-Administrator</em> ein Objekt an, so erhält der Ersteller die vordefinierte Rolle. Damit wird sichergestellt, dass ein <em>Nicht-Administrator</em> Rechte erhält, mit dem er bei Bedarf das Objekt weiter bearbeiten kann.</p>
+<p>Legt ein <em>Nicht-Administrator</em> ein Objekt an, so erhält der Ersteller die vordefinierte Rolle. Damit wird sichergestellt, dass ein <em>Nicht-Administrator</em> Rechte erhält, mit denen er bei Bedarf das Objekt weiter bearbeiten kann.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -866,7 +858,7 @@ E-Mail-Benachrichtigungen und -erinnerungen werden an alle Adressen gesendet.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Benutzer erlauben, das eigene Benutzerkonto zu löschen</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Wird ein Benutzer gelöscht, werden alle Referenzen zu seiner Person mit dem Benutzer <em>Anonym</em> verknüpft. Das Konto über den Administrator zu sperren, ist oft die bessere Alternative.</p>
+<p>Wird ein Benutzer gelöscht, werden alle Referenzen zu seiner Person und ihre Beiträge mit dem Benutzer <em>Anonym</em> verknüpft. Das Konto über den Administrator zu sperren, ist oft die bessere Alternative.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1268,12 +1260,6 @@ Der Eintrag begrenzt den Speicherbedarf der Anwendung. Bei der Festlegung der Da
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">E-Mails als Blindkopie (BCC) senden</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Bei Auswahl der Option werden die E-Mails als Blindkopiee (Empfänger sieht nicht die weiteren Empfänger der Mail) versendet.</p>
-</div></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nur reinen Text (kein HTML) senden</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Bei Auswahl der Option wird kein HTML-Inhalt in der Mail versendet.</p>
@@ -1380,6 +1366,14 @@ Um flexibler in der Suche zu sein, können auch <a href="https://rubular.com/">r
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_archive"><a class="anchor" href="#_archive"></a>Archive</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Archive sind im Rahme des Informationssicherheitsmanagements nicht relevant. Daher wird an dieser Stelle nicht weiter darauf eingegangen.</p>
+</div>
 </div>
 </div>
 </article>

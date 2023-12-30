@@ -15,7 +15,7 @@ The documentation is based on AsciiDoc. The adoc-files are converted to a HTML d
 So you need to install:
 
 - [Antora](https://docs.antora.org/antora/latest/install/install-antora/) and
-- [Antora Lunr Extension](https://docs.antora.org/antora/latest/extend/supported-components/#component-matrix)
+- [Antora Lunr Extension](https://gitlab.com/antora/antora-lunr-extension)
 - [Asciidoctor PDF](https://asciidoctor.org/docs/asciidoctor-pdf/#install-the-published-gem)
 
 For doing so, make sure you run the latest Node.js LTS version:

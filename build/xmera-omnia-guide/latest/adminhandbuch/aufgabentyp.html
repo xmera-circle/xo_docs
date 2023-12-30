@@ -237,6 +237,9 @@
           <a href="../anwenderhandbuch/bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.1/anwenderhandbuch/bediengrundlagen.html">4.1</a>
+        </li>
+        <li class="version">
           <a href="../../4.0/anwenderhandbuch/bediengrundlagen.html">4.0</a>
         </li>
         <li class="version">
@@ -264,6 +267,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="aufgabentyp.html">latest</a>
+    <a class="version" href="../../4.1/adminhandbuch/aufgabentyp.html">4.1</a>
     <a class="version" href="../../4.0/adminhandbuch/aufgabentyp.html">4.0</a>
     <a class="version" href="../../3.7/adminhandbuch/aufgabentyp.html">3.7</a>
   </div>
@@ -322,7 +326,7 @@ video,
 </style></p>
 </div>
 <div class="paragraph">
-<p>Aufgabentypen repräsentieren die verschiedenen Tätigkeiten, die im Rahmen des ISMS-Betriebs durchzuführen und zu dokumentieren sind. Beispiele sind z.B. Maßnahmen, Risikobewertungen oder Vorfälle.</p>
+<p>Aufgabentypen repräsentieren die verschiedenen Tätigkeiten, die im Rahmen des ISMS-Betriebs und ggf. auch IT-/OT-Betrieb durchzuführen und zu dokumentieren sind. Beispiele sind z.B. Maßnahmen, Risikobewertungen oder Vorfälle.</p>
 </div>
 <div class="paragraph">
 <p>Ein Aufgabentyp ermöglicht es</p>
@@ -330,10 +334,10 @@ video,
 <div class="ulist">
 <ul>
 <li>
-<p>nach bestimmten Aufgaben zu suchen, zu filtern oder sie zu gruppiern,</p>
+<p>nach bestimmten Aufgaben zu suchen, zu filtern oder sie zu gruppieren,</p>
 </li>
 <li>
-<p>die Attribute zu bestimmen (Standardfelder oder eigene Felder) die bearbeitet werden,</p>
+<p>die Attribute zu bestimmen (Standardfelder oder eigene Felder), die bearbeitet werden,</p>
 </li>
 <li>
 <p>die Nutzbarkeit auf ausgewählte Objektklassen zu begrenzen,</p>
@@ -369,7 +373,7 @@ video,
 <p><span class="image"><img src="_images/adminhandbuch/aufgabentyp_bearbeiten.png" alt="Aufgabentypen bearbeiten"></span></p>
 </div>
 <div class="paragraph">
-<p>In dieser Maske werden allgemeine Daten, eingeblendete Felder und die Objektklassenauswahl festgelegt.</p>
+<p>In dieser Maske werden allgemeine Daten, Standardfelder, eigene Felder und die Objektklassenauswahl festgelegt.</p>
 </div>
 <div class="dlist">
 <dl>
@@ -388,10 +392,10 @@ video,
 <p><strong>Name</strong>: Die Bezeichnung für den Aufgabentyp,</p>
 </li>
 <li>
-<p><strong>Standardstatus</strong>: Status, der beim Erstellen einer Aufgabe von diesem Typ gesetzt wird,</p>
+<p><strong>Standardstatus</strong>: Status, der beim Erstellen einer Aufgabe mit diesem Typ gesetzt wird,</p>
 </li>
 <li>
-<p><strong>im Stapel anzeigen</strong>: Option, ob dieser Aufgabentyp standardmäßig im <a href="../anwenderhandbuch/aufgaben.html#_aufgabenpakte" class="xref page">Paketstapel</a> automatisch angezeigt werden soll,</p>
+<p><strong>In den Zielen anzeigen</strong>: Option, ob dieser Aufgabentyp automatisch im <a href="../anwenderhandbuch/aufgaben.html#_aufgabenpakte" class="xref page">Aufgabenziel</a> angezeigt werden soll,</p>
 </li>
 <li>
 <p><strong>Beschreibung</strong>: Beschreibung des Aufgabentyps zur leichteren Zuordnung im Betrieb.</p>
@@ -416,14 +420,14 @@ Die Beschreibung ist für den Anwender beim Bearbeiten einer Aufgabe sichtbar.
 Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_speichern.png" alt="Aufgabentyp speichern"></span> werden die Änderungen übernommen.</p>
 </div>
 </dd>
-<dt class="hdlist1">Eingeblendete Felder</dt>
+<dt class="hdlist1">Standardfelder und Eigene Felder</dt>
 <dd>
 <p>Unterhalb der allgemeinen Daten können die Formularfelder ausgewählt werden, die für diesen Aufgabentyp benötigt werden.<br></p>
 <div class="paragraph">
 <p><span class="image"><img src="_images/adminhandbuch/aufgabentyp_bearbeiten_felder.png" alt="Aufgabentypen » eingeblendete Felder"></span></p>
 </div>
 <div class="paragraph">
-<p>Zum einen können Standardfelder, die optional sind, ein- und ausgeblendet werden. Zum anderen können diesem Aufgabentyp <a href="eigene-felder.html" class="xref page">eigene Felder</a> zugeordnet werden.<br></p>
+<p>Zum einen können Standardfelder, die optional sind, ein- und ausgeblendet werden. Zum anderen können einem Aufgabentyp <a href="eigene-felder.html" class="xref page">eigene Felder</a> zugeordnet werden.<br></p>
 </div>
 <div class="paragraph">
 <p>Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_speichern.png" alt="Aufgabentyp speichern"></span> werden die Änderungen übernommen.</p>
@@ -436,12 +440,15 @@ Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/but
 <p><span class="image"><img src="_images/adminhandbuch/aufgabentyp_bearbeiten_objektklassen.png" alt="Aufgabentypen » Objektklassen"></span></p>
 </div>
 <div class="paragraph">
-<p>Durch Klick auf den grünen Haken neben der Blocküberschrift lassen sich alle Objektklassen aus- und abwählen. Durch Klick auf die Auswahlfelder neben den Objektklassen lässt sich die Auswahl anpassen. Sind einer Objektklasse Objekte zugeordnet werden sie unter <em>Zugehörige Objekte</em> gelistet. Dort besteht die Möglichkeit die Auswahl auf einzelne Objekte einzuschränken.<br>
-<br>
-Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_speichern.png" alt="Aufgabentyp speichern"></span> werden die Änderungen übernommen.</p>
+<p>Durch Klick auf den grünen Haken neben der Blocküberschrift lassen sich alle Objektklassen aus- und abwählen.</p>
 </div>
 </dd>
 </dl>
+</div>
+<div class="paragraph">
+<p>Durch Klick auf die Auswahlfelder neben den Objektklassen lässt sich die Auswahl anpassen. Sind einer Objektklasse Objekte zugeordnet werden sie unter <em>Zugehörige Objekte</em> gelistet. Dort besteht die Möglichkeit die Auswahl auf einzelne Objekte einzuschränken.<br>
+<br>
+Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_speichern.png" alt="Aufgabentyp speichern"></span> werden die Änderungen übernommen.</p>
 </div>
 </div>
 <div class="sect2">

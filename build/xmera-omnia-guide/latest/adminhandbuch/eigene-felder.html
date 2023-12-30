@@ -237,6 +237,9 @@
           <a href="../anwenderhandbuch/bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.1/anwenderhandbuch/bediengrundlagen.html">4.1</a>
+        </li>
+        <li class="version">
           <a href="../../4.0/anwenderhandbuch/bediengrundlagen.html">4.0</a>
         </li>
         <li class="version">
@@ -264,6 +267,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="eigene-felder.html">latest</a>
+    <a class="version" href="../../4.1/adminhandbuch/eigene-felder.html">4.1</a>
     <a class="version" href="../../4.0/adminhandbuch/eigene-felder.html">4.0</a>
     <a class="version" href="../../3.7/adminhandbuch/eigene-felder.html">3.7</a>
   </div>
@@ -322,19 +326,19 @@ video,
 </style></p>
 </div>
 <div class="paragraph">
-<p>Eigene Felder bieten die Möglichkeit für Objekte und ihre Module individuelle Felder anzulegen, um Informationen zu dokumentieren, die mit der xmera Omnia Standardkonfiguration nicht abgebildet werden.</p>
+<p>Eigene Felder bieten die Möglichkeit für Objekte und ihre Funktionsmodule individuelle Felder anzulegen, um Informationen zu dokumentieren, die mit der xmera Omnia Standardkonfiguration nicht abgebildet werden.</p>
 </div>
 <div class="paragraph">
-<p>Verwaltet werden <em>Eigene Felder</em> im Administrationsbereich im Menüpunkt <em>Eigene Felder</em>. Über dieses Menü gelangt man in ihre Listenansicht.</p>
+<p>Verwaltet werden <em>Eigene Felder</em> im Administrationsbereich im Menüpunkt <em>Eigene Felder</em>. Über dieses Menü gelangst Du in ihre Listenansicht.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/adminhandbuch/eigene-felder_liste.png" alt="Eigene Felder Liste"></span></p>
 </div>
 <div class="paragraph">
-<p>Die <em>Eigenen Felder</em> werden spezifisch für jeden Objekttyp getrennt angelegt.</p>
+<p>Die <em>Eigenen Felder</em> werden für jedes Funktionsmodul getrennt angelegt.</p>
 </div>
 <div class="paragraph">
-<p>Objekttypen, für die <em>Eigene Felder</em> hinzugefügt werden können, sind in der folgenden Tabelle zu sehen.</p>
+<p>Funktionsmodule, für die <em>Eigene Felder</em> hinzugefügt werden können, sind in der folgenden Tabelle zu sehen.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -344,12 +348,12 @@ video,
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Bereich</th>
-<th class="tableblock halign-left valign-top">Objekttyp</th>
+<th class="tableblock halign-left valign-top">Funktionsmodul</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Objektverwaltung</p></td>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Objekt und Teammitglieder</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Objekte</p></td>
 </tr>
 <tr>
@@ -391,7 +395,7 @@ video,
 </tbody>
 </table>
 <div class="paragraph">
-<p>Für jeden Objekttyp, für den mindestens ein eigenes Feld angelegt wurde, ist in der Listenansicht ein Tab vorhanden. Wird ein Objekttyp im Tab ausgewählt, werden die zugeordneten <em>Eigenen Felder</em> angezeigt.</p>
+<p>Für jedes Funktionsmodul, für das mindestens ein eigenes Feld angelegt wurde, ist in der Listenansicht ein Tab vorhanden. Wird ein Funktionsmodul im Tab ausgewählt, werden die zugeordneten <em>Eigenen Felder</em> angezeigt.</p>
 </div>
 </div>
 </div>
@@ -433,12 +437,12 @@ video,
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eigenschaft/Wert-Paar</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ein Wertepaar aus einem Wert und einer Beschreibung kann zugeordnet werden.<br>
 (Bsp.: 1»sehr gut, 2»gut, 3» befriedigend, &#8230;&#8203;)<br>
-Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer Felder des Objekttyps ergibt.</p></td>
+Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer Felder des Funktionsmoduls ergibt.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fließkommazahl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Eine Fließkommazahl kann zugeordnet werden.<br>
-Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer Felder des Objekttyps ergibt.</p></td>
+Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer Felder des Funktionsmoduls ergibt.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kombinationsmatrix</p></td>
@@ -455,6 +459,10 @@ Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Liste</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aus einer Liste, die im <em>Eigenen Feld</em> definiert wird können ein oder mehrere Wert(e) gewählt werden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objektklassen Master</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aus einer Liste mit im System bestehenden Objektklassen können ein oder mehrere Wert(e) gewählt werden.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Paket</p></td>
@@ -477,13 +485,13 @@ Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Die vollständige Liste der Feldformate wird nicht für jeden Objekttyp angezeigt.
+Die vollständige Liste der Feldformate wird nicht für jedes Funktionsmodul angezeigt.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Die Parametrierung der einzelnen Feldformate ist spezifisch. Allen eigenen Feldern gemeinsam ist</p>
+<p>Die Parametrierung der einzelnen Feldformate ist verschieden. Allen eigenen Feldern gemeinsam ist</p>
 </div>
 <div class="ulist">
 <ul>
@@ -494,19 +502,19 @@ Die vollständige Liste der Feldformate wird nicht für jeden Objekttyp angezeig
 <p>die Beschreibung (Wird als Tooltip per Mouseover dem Anwender angezeigt) und</p>
 </li>
 <li>
-<p>Erforderlich (Angehakt wird das Feld zum Pflichtfeld).</p>
+<p>Erforderlich (Angekreuzt wird das Feld zum Pflichtfeld).</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Wenn nach dem Feld sinnvoll gefiltert werden kann, so wird die Auswahl <em>Als Filter benutzen</em> angeboten. Nur wenn das Feld angehakt ist, wird das Feld als Filtermöglichkeit angeboten.</p>
+<p>Wenn nach dem Feld sinnvoll gefiltert werden kann, so wird die Auswahl <em>Als Filter benutzen</em> angeboten.</p>
 </div>
 <div class="paragraph">
 <p>Bei Auswahlfeldern (z.B. Listen, Benutzern oder Paketen) ist im Standard nur ein Wert erlaubt. Über Aktivieren der Auswahl <em>Mehrere Werte</em> kann auf Mehrfachauswahl umgestellt werden.<br>
 Weiter kann bei der <em>Anzeige</em> der Auswahl zwischen der Dropdown-Liste und der Checkbox gewählt werden.</p>
 </div>
 <div class="paragraph">
-<p>Abhängig vom Objekttyp, dem das <em>Eigene Feld</em> zugeordnet wird, besteht die Möglichkeit, die Nutzung des Feldes einzuschränken. Mögliche Filter sind</p>
+<p>Abhängig vom Funktionsmodul, dem das <em>Eigene Feld</em> zugeordnet wird, besteht die Möglichkeit, die Nutzung des Feldes einzuschränken. Mögliche Einschränkungen sind</p>
 </div>
 <div class="ulist">
 <ul>
@@ -527,16 +535,16 @@ Weiter kann bei der <em>Anzeige</em> der Auswahl zwischen der Dropdown-Liste und
 <h2 id="_neues_eigenes_feld_erstellen"><a class="anchor" href="#_neues_eigenes_feld_erstellen"></a>Neues Eigenes Feld erstellen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Durch Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_neues-feld.png" alt="Neues Feld"></span> wird der Prozess zur Erstellung eines eigenen Feldes gestartet. Als erstes öffnet ein Fenster, in dem der Objekttyp, dem das eigene Feld zugeordnet ist, auszuwählen ist.</p>
+<p>Durch Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_neues-feld.png" alt="Neues Feld"></span> wird der Prozess zur Erstellung eines eigenen Feldes gestartet. Als erstes öffnet ein Fenster, in dem das Funktionsmodul, dem das eigene Feld zugeordnet wird, auszuwählen ist.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_neu_objekttyp.png" alt="Neues Feld | Objekttyp wählen"></span></p>
+<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_neu_funktionsmodul.png" alt="Neues Feld | Funktionsmodul wählen"></span></p>
 </div>
 <div class="paragraph">
-<p>Mit <em>Weiter»</em>  gelangt man in die Bearbeitungsmaske des eigenen Feldes. Als erstes sollte das <a href="#_feldformate">Format</a> festgelegt werden, da die folgenden Attribute von dem Feldformat abhängen.</p>
+<p>Mit <em>Weiter »</em>  gelangst Du in das Bearbeitungsformular des eigenen Feldes. Als erstes sollte das <a href="#_feldformate">Format</a> festgelegt werden, da die folgenden Attribute von dem Feldformat abhängen.</p>
 </div>
 <div class="paragraph">
-<p>Im folgenden Bild ist der Parametersatz für ein Textfeld zum Objekttyp <em>Aufgaben</em> zu sehen.</p>
+<p>Im folgenden Bild sind die Einstellungsmöglichkeiten für ein Textfeld zum Funktionsmodul <em>Aufgaben</em> zu sehen.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/adminhandbuch/eigene-felder_neu_parameter.png" alt="Neues Feld | Parametrieren"></span></p>
@@ -593,7 +601,7 @@ Weiter kann bei der <em>Anzeige</em> der Auswahl zwischen der Dropdown-Liste und
 </dd>
 <dt class="hdlist1">Löschen</dt>
 <dd>
-<p>Durch Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_loeschen.png" alt="Eigenes Feld löschen"></span> wird nach der Bestätigung in einem Pop-Up-Fenster das Eigene Feld gelöscht.<br></p>
+<p>Durch Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_loeschen.png" alt="Eigenes Feld löschen"></span> wird nach der Bestätigung in einem Pop-Up-Fenster das <em>Eigene Feld</em> gelöscht.<br></p>
 <div class="admonitionblock warning">
 <table>
 <tr>

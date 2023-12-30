@@ -237,6 +237,9 @@
           <a href="bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.1/anwenderhandbuch/bediengrundlagen.html">4.1</a>
+        </li>
+        <li class="version">
           <a href="../../4.0/anwenderhandbuch/bediengrundlagen.html">4.0</a>
         </li>
         <li class="version">
@@ -265,6 +268,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="wiki.html">latest</a>
+    <a class="version" href="../../4.1/anwenderhandbuch/wiki.html">4.1</a>
     <a class="version" href="../../4.0/anwenderhandbuch/wiki.html">4.0</a>
     <a class="version" href="../../3.7/anwenderhandbuch/wiki.html">3.7</a>
   </div>
@@ -350,7 +354,7 @@ video,
 </ul>
 </div>
 <div class="paragraph">
-<p>Die Wikigestaltung wird durch die <a href="#_wiki_toolbar">Wiki-Toolbar</a>, mit der die Texte formatiert werden können, und der Möglichkeit Bilder und Grafiken einzubinden, unterstützt.</p>
+<p>Die Wikigestaltung wird durch die <a href="#_wiki_toolbar">Wiki-Toolbar</a> unterstützt. Mit ihr können Texte formatiert und Bilder oder Grafiken eingebunden werden.</p>
 </div>
 <div class="paragraph">
 <p>Zum Erstellen von Grafiken muss die <a href="https://www.drawio.com/">Drawio</a>-Integration im Administrationsbereich konfiguriert worden sein.</p>
@@ -377,7 +381,7 @@ video,
 <p>In xmera Omnia wird als Auszeichnungssprache <em>Markdown</em> empfohlen. <a href="#_syntax_markdown">Markdown</a> ist eine sehr einfache Auszeichnungssprache, die die Textformatierung unterstützt.</p>
 </div>
 <div class="paragraph">
-<p>Über die Administration kann die Anwendung auch auf <em>Textile</em> umgestellt werden.</p>
+<p>Über die Administration kann die Anwendung auch auf <em>Textile</em> oder <em>CommonMark Markdown</em> umgestellt werden. <em>CommonMark Markdown</em> und <em>Markdown</em> sind sehr ähnlich. <em>CommonMark Markdown</em> unterstützt zusätzlich Checkboxen und einige CSS Attribute. Mehr dazu erfährst Du in der Hilfe durch Klick auf <span class="image"><img src="_images/anwenderhandbuch/wikitoolbar/bt_help.png" alt="bt help"></span>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -385,7 +389,7 @@ video,
 </div>
 </div>
 <div class="paragraph">
-<p>Für die Textformatierung steht eine Toolbar zur Verfügung. Das Ergebnis kann man sich über die Vorschau anschauen. Jede Anpassung kann kommentiert werden. Damit hat man in der Veränderungshistorie des Wiki die Möglichkeit, Änderungen leichter nachzuvollziehen.</p>
+<p>Für die Textformatierung steht eine Toolbar zur Verfügung. Das Ergebnis kannst Du Dir über die Vorschau anschauen. Jede Anpassung kann kommentiert werden. Damit hast Du in der Veränderungshistorie des Wiki die Möglichkeit, Änderungen leichter nachzuvollziehen.</p>
 </div>
 <div class="paragraph">
 <p>Mit Klick auf den Button <span class="image"><img src="_images/anwenderhandbuch/button_speichern.png" alt="button speichern"></span> wird die aktuelle Seite gespeichert. Es erscheint die Wiki-Startseite.</p>
@@ -438,13 +442,13 @@ video,
 <p><span class="image"><img src="_images/anwenderhandbuch/modul_wiki_sidebar_hauptseite.png" alt="modul wiki sidebar hauptseite"></span></p>
 </div>
 <div class="paragraph">
-<p>Mit der Auswahl <em>Seiten nach Titel sortiert</em> oder <em>Seiten nach Datum sortiert</em> werden die erstellten Wikiseiten aufgelistet. Im folgenden Beispiel ist die Sortierung nach Datum zu sehen</p>
+<p>Mit der Auswahl <em>Seiten nach Titel sortiert</em> oder <em>Seiten nach Datum sortiert</em> werden die erstellten Wikiseiten aufgelistet. Im folgenden Beispiel ist die Sortierung nach Datum zu sehen:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/modul_wiki_sidebar_nach_datum.png" alt="modul wiki sidebar nach datum"></span></p>
 </div>
 <div class="paragraph">
-<p>Die Sidebar kann individuell ergänzt werden. Über den Button <span class="image"><img src="_images/anwenderhandbuch/button_bearbeiten.png" alt="bearbeiten"></span> im oberen Bereich der Sidebar gelangt man in die Bearbeitungsseite der Sidebar.</p>
+<p>Die Sidebar kann individuell ergänzt werden. Über den Button <span class="image"><img src="_images/anwenderhandbuch/button_bearbeiten.png" alt="bearbeiten"></span> im oberen Bereich der Sidebar gelangst Du in die Bearbeitungsseite der Sidebar.</p>
 </div>
 <div class="paragraph">
 <p>Die Wikiseite mit dem Namen <em>Sidebar</em> wird, sobald diese vorhanden ist, oberhalb der Standardelemente dargestellt. So lässt sich mit Hilfe von Seitenlinks ein Inhaltsverzeichnis aufbauen.</p>
@@ -468,24 +472,20 @@ video,
 <p><span class="image"><img src="_images/anwenderhandbuch/modul_wiki_sidebar_toc.png" alt="modul wiki sidebar toc"></span></p>
 </div>
 <div class="paragraph">
-<p>Soll das Inhaltsverzeichnis auf die ersten <em>x</em> Ebenen begrenzt werden, so kann dieses über den Zusatz {{child_pages(depth=_x_)}} eingeschränkt werden.</p>
+<p>Soll das Inhaltsverzeichnis auf die ersten <em>n</em> Ebenen begrenzt werden, so kann dieses über den Zusatz {{child_pages(depth=_n_)}} eingeschränkt werden.</p>
 </div>
 <div class="paragraph">
 <p>Soll diese Untergliederung zur <em>Sidebar</em> nicht erfolgen oder ist die alphabetische Reihenfolge ungünstig, kann die Seite manuell strukturiert werden.</p>
 </div>
 <div class="paragraph">
-<p>Im Folgenden ist ein Beispiel einer manuell angelegten Seitenstruktur zu sehen</p>
+<p>Im Folgenden ist ein Beispiel einer manuell angelegten Seitenstruktur zu sehen.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>  # Wiki Sidebar
-  (Beispiel)
+<pre>  # Netzwerk Wiki
 
-  ## [[Testwiki]]
-  {{child_pages(Testwiki)}}
-
-  ## [[Neuer_Wiki_Baum|Baum 2]]
-  {{child_pages(Neuer_Wiki_Baum)}}</pre>
+  ## [[Wiki | Inhalt]]
+  {{child_pages(wiki)}}</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -498,7 +498,7 @@ video,
 <div class="sect2">
 <h3 id="_seite_umbenennen"><a class="anchor" href="#_seite_umbenennen"></a>Seite umbenennen</h3>
 <div class="paragraph">
-<p>Über das 3-Punkte-Menü auf der Seite gelangt man zur Umbenennungsmaske der Wikiseite.</p>
+<p>Über das 3-Punkte-Menü auf der Seite kommst Du zur Umbenennungsmaske der Wikiseite.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -534,7 +534,7 @@ video,
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Mit der Namensänderung wird automatisch der URL-Name geändert. Damit funktionieren ggf. externe Links auf die Wikiseite nicht mehr. Wichtig ist dann, die Option <em>Existierende Links umleiten</em> ausgewählt zu haben.
+Mit der Namensänderung wird automatisch der URL-Name geändert. Damit funktionieren ggf. externe Links auf die Wikiseite nicht mehr. Wichtig ist dann, die Option <em>Existierende Links umleiten</em> auszuwählen.
 </td>
 </tr>
 </table>
@@ -573,7 +573,7 @@ Mit der Namensänderung wird automatisch der URL-Name geändert. Damit funktioni
 <div class="ulist">
 <ul>
 <li>
-<p>Name der Wikiseite (rot)</p>
+<p>Name der Wikiseite (orange)</p>
 </li>
 <li>
 <p>Wiki-Toolbar mit dem Bearbeitungsbereich</p>
@@ -601,10 +601,10 @@ Mit der Namensänderung wird automatisch der URL-Name geändert. Damit funktioni
 <div class="sect2">
 <h3 id="_wiki_toolbar"><a class="anchor" href="#_wiki_toolbar"></a>Wiki-Toolbar</h3>
 <div class="paragraph">
-<p>Die Textbearbeitung erfolgt in diesem Beispiel mit der Auszeichnungssprache Markdown. Grundsätzlich kann in der Administration auch Textile gewählt werden.</p>
+<p>Die Textbearbeitung erfolgt in diesem Beispiel mit der Auszeichnungssprache <em>Markdown</em>. Grundsätzlich kann in der Administration auch <em>Textile</em> oder <em>CommonMark Markdown</em> gewählt werden.</p>
 </div>
 <div class="paragraph">
-<p>In beiden Fällen bietet xmera Omnia eine Vorschau und die wichtigsten Formatierungselemente als Toolbar. Somit ist ein schneller Einstieg in die Bearbeitung möglich.</p>
+<p>In allen Fällen bietet xmera Omnia eine Vorschau und die wichtigsten Formatierungselemente als Toolbar. Somit ist ein schneller Einstieg in die Bearbeitung möglich.</p>
 </div>
 <div class="paragraph">
 <p>Die Umschaltung zwischen dem Bearbeitungsmodus und der Vorschau erfolgt über den Tab <span class="image"><img src="_images/anwenderhandbuch/modul_wiki_toolbar_bearbeiten_vorschau.png" alt="Bearbeiten/Vorschau"></span>.</p>
@@ -813,10 +813,7 @@ Der Modus wirkt sich immer nur auf die eine Wikiseite aus.
 <p>{{macro_list}}</p>
 </div>
 <div class="paragraph">
-<p>In der aktuellen Version von xmera Omnia sind das:</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="_images/anwenderhandbuch/modul_wiki_macro_list.png" alt="Liste aktueller Makros"></span></p>
+<p>Probiere es einfach mal aus!</p>
 </div>
 </div>
 </div>
