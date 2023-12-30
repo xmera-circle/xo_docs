@@ -540,49 +540,77 @@ Die mit <span class="red">*</span> gekennzeichneten Felder sind Pflichtfelder un
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Name des zu erzeugenden Objekts. (Pflichtfeld)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Name des zu erzeugenden Objekts. (Pflichtfeld)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Softwareentwicklung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beschreibung</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung des zu erzeugenden Objekts. (Optional)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Beschreibung des zu erzeugenden Objekts. (Optional)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Entwicklung von Standardsoftware zur Produktionssteuerung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kennung</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kennung des zu erzeugenden Objekts: Länge zwischen 1 und 100 Zeichen. Kleinbuchstaben (a-z), Ziffern, Binde- und Unterstriche erlaubt. (Pflichtfeld)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Kennung des zu erzeugenden Objekts: Länge zwischen 1 und 100 Zeichen. Kleinbuchstaben (a-z), Ziffern, Binde- und Unterstriche erlaubt. (Pflichtfeld)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">softwareentwicklung</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Öffentlich</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Soll das Objekt für alle Systembenutzer ohne Mitgliedschaft zugänglich sein? (Standard: false)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Soll das Objekt für alle Systembenutzer ohne Mitgliedschaft zugänglich sein? (Standard: false)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Unterobjekt von</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kennung des gewünschten Elternobjektes. (Pflichtfeld)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Kennung des gewünschten Elternobjektes. (Pflichtfeld)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">prozess-informationen</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Benutzer erben</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Das zu erzeugende Objekt bekommt die selben Benutzer wie das Elternobjekt. (Optional)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Das zu erzeugende Objekt bekommt die selben Benutzer wie das Elternobjekt. (Standard: false)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Objektklasse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kennung der Objektklasse, von der das zu erzeugende Objekt abgeleitet werden soll. (Pflichtfeld)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Kennung der Objektklasse, von der das zu erzeugende Objekt abgeleitet werden soll. (Pflichtfeld)</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Jede Objektklasse bekommt nach der Erstellung einen Präfix. Schaue Dir die Kennung noch einmal an!
+</td>
+</tr>
+</table>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">okm-prozess</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>[Objekt-Eigenes-Feld]</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[Feldtyp]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">[Objekt-Eigenes-Feld] = Name des eigenen Felds, das in der Objektlasse des erzeugenden Objekts definiert ist. [Feldtyp] hängt vom eigenen Feld ab und bestimmt den Wert. (Optional)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>[Objekt-Eigenes-Feld] = Name des eigenen Felds, das in der Objektlasse des erzeugenden Objekts definiert ist. [Feldtyp] hängt vom eigenen Feld ab und bestimmt den Wert. (Optional)</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Für ein Beispiel siehe Bild <a href="#objekt_import_feldzuordnung">Feldzuordnung</a>.</p></td>
 </tr>
 </tbody>
