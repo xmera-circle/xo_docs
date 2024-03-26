@@ -390,7 +390,7 @@ video,
 <h2 id="_objekthierarchie"><a class="anchor" href="#_objekthierarchie"></a>Objekthierarchie</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Mit Hilfe eines hierarchischen Aufbaus der Objekte hast Du die Möglichkeit Arbeitsbereiche, Verantwortlichkeiten/Organisationen oder auch Sicherheitszonen/Cluster strukturiert darzustellen. Die hierarchische Struktur legst Du fest, indem Du das übergeordnete Objekt des Dir vorliegenden Objektes definierst. Diese Einstellung nimmst Du  am Besten bei der <a href="#Objekte erstellen und konfigurieren">Erstellung/Konfiguration des Objektes</a> vor. Sie lässt sich auch später vornehmen oder ändern. So entsteht ein Objektbaum, der sich in der Listenanzeige auf der Übersichtsseite aller Objekte (siehe Top-Menü) beispielsweise so darstellen läßt:</p>
+<p>Mit Hilfe eines hierarchischen Aufbaus der Objekte hast Du die Möglichkeit Arbeitsbereiche, Verantwortlichkeiten/Organisationen oder auch Sicherheitszonen/Cluster strukturiert darzustellen. Die hierarchische Struktur legst Du fest, indem Du das übergeordnete Objekt des Dir vorliegenden Objektes definierst. Diese Einstellung nimmst Du am Besten bei der <a href="#Objekte erstellen und konfigurieren">Erstellung/Konfiguration des Objektes</a> vor. Sie lässt sich auch später vornehmen oder ändern. So entsteht ein Objektbaum, der sich in der Listenanzeige auf der Übersichtsseite aller Objekte (siehe Top-Menü) beispielsweise so darstellen läßt:</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/anwenderhandbuch/objekt_hierarchiebaum_undefined.png" alt="Objekthierarchie"></span></p>
@@ -418,13 +418,13 @@ video,
 <div class="ulist">
 <ul>
 <li>
-<p>Prozess nutzt Anwendung,</p>
+<p>Prozess nutzt den Dienst Anwendung,</p>
 </li>
 <li>
-<p>Client nutzt Server oder</p>
+<p>Client nutzt den Dienst Server oder</p>
 </li>
 <li>
-<p>Server steht im Serverraum.</p>
+<p>Server nutzt den Dienst Serverraum.</p>
 </li>
 </ul>
 </div>
@@ -512,6 +512,18 @@ Die mit <span class="red">*</span> gekennzeichneten Felder sind Pflichtfelder un
 <h3 id="_objekte_importieren"><a class="anchor" href="#_objekte_importieren"></a>Objekte importieren</h3>
 <div class="paragraph">
 <p>Über eine CSV-Schnittstelle können Objekte in großer Zahl in xmera Omnia eingebracht werden. Voraussetzung dafür ist, dass entsprechend vorkonfigurierte <a href="#_objektklassen">Objektklassen</a> bestehen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese Objekte müssen dann nach dem Import noch konfiguriert werden.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Der Objektimport erfolgt in 5 Schritten:</p>
