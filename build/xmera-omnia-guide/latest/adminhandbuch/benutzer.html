@@ -46,6 +46,8 @@
           <a class="navbar-link main-item" href="#">Unternehmen</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://xmera.de/ueber-uns/">Über uns</a>
+            <a class="navbar-item" href="https://xmera.de/jobs/">Jobs</a>
+            <a class="navbar-item" href="https://xmera.de/blog/">Blog</a>
             <a class="navbar-item" href="https://xmera.de/kontakt">Kontakt</a>
           </div>
         </div>
@@ -332,7 +334,7 @@ video,
 <p><span class="image"><img src="_images/adminhandbuch/benutzer_liste.png" alt="benutzer liste"></span></p>
 </div>
 <div class="paragraph">
-<p>In dieser Liste werden alle aktiven Benutzer mit ihrem Mitgliedsnamen, dem Vor- und Nachnamen, der E-Mailadresse, der Kennung, dem Status als Administrator, wann das Konto angelegt wurde und wann die letzte Anmeldung durchgeführt wurde.</p>
+<p>In dieser Liste werden alle aktiven Benutzer mit ihrem Benutzernamen, dem Vor- und Nachnamen, der E-Mailadresse, der Kennung, dem Status als Administrator, wann das Konto angelegt wurde und wann die letzte Anmeldung durchgeführt wurde.</p>
 </div>
 <div class="paragraph">
 <p>Aus dieser Liste können die einzelnen Benutzerkonten durch die Button in der entsprechenden Benutzerzeile <em>aktiviert</em>, <em>gesperrt</em> oder auch <em>gelöscht</em> werden.</p>
@@ -408,7 +410,7 @@ Der Button <em>Aktivierung</em> steht zur Verfügung, wenn sich ein Benutzer reg
 <div class="ulist">
 <ul>
 <li>
-<p>wird der Mitgliedsname (Benutzer-ID) gefordert,</p>
+<p>wird der Benutzername (Benutzer-ID) gefordert,</p>
 </li>
 <li>
 <p>besteht die Möglichkeit den Nutzer Administrationsrechte zu geben,</p>
@@ -465,7 +467,7 @@ Der Button <em>Aktivierung</em> steht zur Verfügung, wenn sich ein Benutzer reg
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mitgliedsname</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Benutzername</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anmeldename für den Benutzer. Nur Kleinbuchstaben, Ziffern und die Sonderzeichen _ - . ohne Leerzeichen erlaubt (Pflichtfeld)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">max.mustermann</p></td>
@@ -602,7 +604,7 @@ Der Importprozess wird nicht abgebrochen, wenn eine oder mehrere Zeilen nicht ve
 <div class="sect2">
 <h3 id="_selbstregistrierung"><a class="anchor" href="#_selbstregistrierung"></a>Selbstregistrierung</h3>
 <div class="paragraph">
-<p>Über die Konfiguration kann bei der Authentifizierung die Selbstregistrierung gewählt werden. Bei dieser Art, kann sich ein neuer Benutzer mit seinen Daten (Mitgliedsnamen, Vor- und Nachnamen, E-Mailadresse und Passwort) registrieren. Je nach Anmeldeoption kann der registrierte Benutzer automatisch, nach einer E-Mailbestätigung oder durch einen Administrator aktiviert werden.</p>
+<p>Über die Konfiguration kann bei der Authentifizierung die Selbstregistrierung gewählt werden. Bei dieser Art, kann sich ein neuer Benutzer mit seinen Daten (Benutzernamen, Vor- und Nachnamen, E-Mailadresse und Passwort) registrieren. Je nach Anmeldeoption kann der registrierte Benutzer automatisch, nach einer E-Mailbestätigung oder durch einen Administrator aktiviert werden.</p>
 </div>
 </div>
 <div class="sect2">
@@ -617,7 +619,7 @@ Der Importprozess wird nicht abgebrochen, wenn eine oder mehrere Zeilen nicht ve
 <h2 id="_benutzer_bearbeiten"><a class="anchor" href="#_benutzer_bearbeiten"></a>Benutzer bearbeiten</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Durch Klick auf den Mitgliedsnamen in der Benutzerliste gelangt man in die Bearbeitungsmaske des Benutzers. Im oberen Bereich finden sich mehrere Taps und Funktionsbutton.</p>
+<p>Durch Klick auf den Benutzernamen in der Benutzerliste gelangt man in die Bearbeitungsmaske des Benutzers. Im oberen Bereich finden sich mehrere Taps und Funktionsbutton.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="_images/adminhandbuch/benutzer_bearbeiten_funktionen.png" alt="Funktionen Benutzer bearbeiten"></span></p>
@@ -701,7 +703,7 @@ Das Löschen kann nicht rückgängig gemacht werden. Mit dem Löschen gehen alle
 <dl>
 <dt class="hdlist1">Objektzuordnung ändern</dt>
 <dd>
-<p>Die Rollenzuordnung zu jedem einzelnen Objekt kann in der Objektkonfiguration <a href="../anwenderhandbuch/objekte.html#_mitglieder_verwalten" class="xref page">im Tab Mitglieder</a> festgelegt werden.<br></p>
+<p>Die Rollenzuordnung zu jedem einzelnen Objekt kann in der Objektkonfiguration <a href="../anwenderhandbuch/objekte.html#_mitglieder_verwalten" class="xref page">im Tab Teammitglieder</a> festgelegt werden.<br></p>
 <div class="paragraph">
 <p>Der Administrator hat aber auch hier die Möglichkeit die Zuordnung zu bearbeiten. Die Rollen, die ein Benutzer in einem der aufgeführten Objekte hat, kann über den Button <span class="image"><img src="_images/adminhandbuch/button_bearbeiten.png" alt="Bearbeiten"></span> erfolgen. Es werden verfügbare Rollen gelistet und durch Setzen oder Entfernen der Häkchen werden die Rollen aktiviert oder deaktiviert.<br></p>
 </div>
@@ -790,6 +792,8 @@ Rechte, die der Benutzer durch die Gruppenzugehörigkeit erhalten hat, können a
           <div class="navbar-item"><a href="https://xmera.de/dokumentation/">Dokumentation</a></div>
           <div class="navbar-item"><a href="https://xmera.de/downloads/">Downloads</a></div>
           <div class="navbar-item"><a href="https://xmera.de/ueber-uns/">Über uns</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/jobs/">Jobs</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/blog/">Blog</a></div>
           <div class="navbar-item"><a href="https://xmera.de/kontakt/">Kontakt</a></div>
         </div>
       </nav>
@@ -807,7 +811,7 @@ Rechte, die der Benutzer durch die Gruppenzugehörigkeit erhalten hat, können a
       </div>
   </div>
   <div class="site-info">
-    <span>© 2021 - 2023 xmera Solutions.</span>
+    <span>© 2021 - 2024 xmera Solutions.</span>
   </div>
 </footer>
 <script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>

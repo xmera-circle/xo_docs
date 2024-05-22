@@ -46,6 +46,8 @@
           <a class="navbar-link main-item" href="#">Unternehmen</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://xmera.de/ueber-uns/">Über uns</a>
+            <a class="navbar-item" href="https://xmera.de/jobs/">Jobs</a>
+            <a class="navbar-item" href="https://xmera.de/blog/">Blog</a>
             <a class="navbar-item" href="https://xmera.de/kontakt">Kontakt</a>
           </div>
         </div>
@@ -493,7 +495,7 @@ Wird die Auswahl <em>Neues Objekt</em> oder <em>Neues Unterobjekt</em> nicht ang
 </table>
 </div>
 <div class="paragraph">
-<p>Bei Klick auf einem der Button wird eine Konfigurationsmaske für das neue Objekt geöffnet. Die wichtigsten Punkte werden in den folgenden Unterkapiteln beschrieben.</p>
+<p>Bei Klick auf einem der Button wird eine Konfigurationsmaske für das neue Objekt geöffnet. Die wichtigsten Punkte werden im Kapitel <a href="#_objekte_konfigurieren">Objekte konfigurieren</a> beschrieben.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -577,7 +579,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Öffentlich</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Soll das Objekt für alle Systembenutzer ohne Mitgliedschaft zugänglich sein? (Standard: false)</p>
+<p>Soll das Objekt für alle Systembenutzer ohne Mitgliedschaft zugänglich sein? (Standard: false oder der Wert in der zugehörigen Objektklasse)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
 </tr>
@@ -593,7 +595,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Benutzer erben</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Das zu erzeugende Objekt bekommt die selben Benutzer wie das Elternobjekt. (Standard: false)</p>
+<p>Das zu erzeugende Objekt bekommt die selben Benutzer wie das Elternobjekt. (Standard: false oder der Wert in der zugehörigen Objektklasse)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
 </tr>
@@ -622,6 +624,18 @@ Jede Objektklasse bekommt nach der Erstellung einen Präfix. Schaue Dir die Kenn
 <td class="tableblock halign-left valign-top"><p class="tableblock">[Feldtyp]</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>[Objekt-Eigenes-Feld] = Name des eigenen Felds, das in der Objektlasse des erzeugenden Objekts definiert ist. [Feldtyp] hängt vom eigenen Feld ab und bestimmt den Wert. (Optional)</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Wird kein Wert gesetzt, wird das Objekt mit dem Wert der Objektklasse für das entsprechende Feld erzeugt.
+</td>
+</tr>
+</table>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Für ein Beispiel siehe Bild <a href="#objekt_import_feldzuordnung">Feldzuordnung</a>.</p></td>
 </tr>
@@ -854,7 +868,19 @@ Mögliche Textauszeichnungssprachen sind Markdown und Textile. Welcher Editor ve
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-Der Administrator kann in der Konfiguration vorgeben, dass eine Anmeldung zwingend notwendig ist. Damit wird verhindert, dass nicht autorisierte Nutzer mit dem System arbeiten können.
+Der Administrator kann in der Konfiguration vorgeben, dass eine Anmeldung zwingend notwendig ist. Damit wird verhindert, dass anonyme Nutzer entsprechend der gegebenen Rechte mit öffentlichen Objekten am System arbeiten können.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Bei der manuellen Erzeugung eines Objektes auf Basis seiner Objektklasse wird der Wert für das Attribut <em>Öffentlich</em> entsprechend der Objektklasse gesetzt. Abweichungen davon müssen im Nachgang gesetzt werden.
 </td>
 </tr>
 </table>
@@ -870,6 +896,18 @@ Der Administrator kann in der Konfiguration vorgeben, dass eine Anmeldung zwinge
 <h3 id="_benutzer_erben"><a class="anchor" href="#_benutzer_erben"></a>Benutzer erben</h3>
 <div class="paragraph">
 <p>Mit Setzen des Feldes werden die Mitglieder mit ihren Rollen aus dem übergeordneten Objekt übernommen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Bei der manuellen Erzeugung eines Objektes auf Basis seiner Objektklasse wird der Wert für das Attribut <em>Benutzer erben</em> entsprechend der Objektklasse gesetzt. Abweichungen davon müssen im Nachgang gesetzt werden.
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -1044,6 +1082,8 @@ Die Anzahl der Tage, die chronologisch dargestellt werden, kann in der Systemkon
           <div class="navbar-item"><a href="https://xmera.de/dokumentation/">Dokumentation</a></div>
           <div class="navbar-item"><a href="https://xmera.de/downloads/">Downloads</a></div>
           <div class="navbar-item"><a href="https://xmera.de/ueber-uns/">Über uns</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/jobs/">Jobs</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/blog/">Blog</a></div>
           <div class="navbar-item"><a href="https://xmera.de/kontakt/">Kontakt</a></div>
         </div>
       </nav>
@@ -1061,7 +1101,7 @@ Die Anzahl der Tage, die chronologisch dargestellt werden, kann in der Systemkon
       </div>
   </div>
   <div class="site-info">
-    <span>© 2021 - 2023 xmera Solutions.</span>
+    <span>© 2021 - 2024 xmera Solutions.</span>
   </div>
 </footer>
 <script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
