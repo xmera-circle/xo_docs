@@ -239,6 +239,9 @@
           <a href="bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.2/anwenderhandbuch/bediengrundlagen.html">4.2</a>
+        </li>
+        <li class="version">
           <a href="../../4.1/anwenderhandbuch/bediengrundlagen.html">4.1</a>
         </li>
         <li class="version">
@@ -269,6 +272,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="objekte.html">latest</a>
+    <a class="version" href="../../4.2/anwenderhandbuch/objekte.html">4.2</a>
     <a class="version" href="../../4.1/anwenderhandbuch/objekte.html">4.1</a>
     <a class="version" href="../../4.0/anwenderhandbuch/objekte.html">4.0</a>
     <a class="version" href="../../3.7/anwenderhandbuch/objekte.html">3.7</a>
@@ -537,14 +541,16 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 <p>Eine für den Import von Objekten geeignete Importdatei muss folgende Daten beinhalten:</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Spaltenbezeichnung</th>
+<th class="tableblock halign-left valign-top">Spaltenbezeichnung (de)</th>
+<th class="tableblock halign-left valign-top">Spaltenbezeichnung (neutral)</th>
 <th class="tableblock halign-left valign-top">Datentyp</th>
 <th class="tableblock halign-left valign-top">Beschreibung</th>
 <th class="tableblock halign-left valign-top">Beispiel</th>
@@ -553,6 +559,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">name</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Name des zu erzeugenden Objekts. (Pflichtfeld)</p>
@@ -561,6 +568,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beschreibung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Beschreibung des zu erzeugenden Objekts. (Optional)</p>
@@ -569,6 +577,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kennung</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">identifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Kennung des zu erzeugenden Objekts: Länge zwischen 1 und 100 Zeichen. Kleinbuchstaben (a-z), Ziffern, Binde- und Unterstriche erlaubt. (Pflichtfeld)</p>
@@ -577,6 +586,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Öffentlich</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is_public</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Soll das Objekt für alle Systembenutzer ohne Mitgliedschaft zugänglich sein? (Standard: false oder der Wert in der zugehörigen Objektklasse)</p>
@@ -585,6 +595,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Unterobjekt von</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">parent_id</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Kennung des gewünschten Elternobjektes. (Pflichtfeld)</p>
@@ -593,6 +604,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Benutzer erben</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">inherit_members</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Das zu erzeugende Objekt bekommt die selben Benutzer wie das Elternobjekt. (Standard: false oder der Wert in der zugehörigen Objektklasse)</p>
@@ -601,6 +613,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Objektklasse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">project_type_id</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Kennung der Objektklasse, von der das zu erzeugende Objekt abgeleitet werden soll. (Pflichtfeld)</p>
@@ -621,6 +634,7 @@ Jede Objektklasse bekommt nach der Erstellung einen Präfix. Schaue Dir die Kenn
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>[Objekt-Eigenes-Feld]</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cf_[id]</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">[Feldtyp]</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>[Objekt-Eigenes-Feld] = Name des eigenen Felds, das in der Objektlasse des erzeugenden Objekts definiert ist. [Feldtyp] hängt vom eigenen Feld ab und bestimmt den Wert. (Optional)</p>
