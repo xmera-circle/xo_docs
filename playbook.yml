@@ -1,3 +1,4 @@
+---
 site:
   title: xmera Omnia Dokumentation
   url: https://docs.xmera.de
@@ -7,7 +8,7 @@ content:
   - url: .
     branches: HEAD
   - url: ../xo_guide
-    branches: [master, '4.1', '4.0', '3.7']
+    branches: [master, '4.2', '4.1', '4.0', '3.7']
   - url: ../xo_demo_guide
     branches: [master, '3.7']
 ui:
