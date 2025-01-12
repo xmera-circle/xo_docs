@@ -1,1 +1,1 @@
-https://docs.xmera.de[xmera Omnia Documentation] © 2022-2024 by https://xmera.de[xmera Solutions GmbH] is licensed under http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1[CC BY-SA 4.0].
+https://docs.xmera.de[xmera Omnia Documentation] © 2022-2025 by https://xmera.de[xmera Solutions GmbH] is licensed under http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1[CC BY-SA 4.0].
