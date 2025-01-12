@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eigene Felder :: xmera Omnia Dokumentation</title>
+    <link rel="canonical" href="https://docs.xmera.de/xmera-omnia-guide/latest/adminhandbuch/eigene-felder.html">
+    <meta name="generator" content="Antora 3.1.2">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/font-awesome/css/font-awesome.min.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://xmera.de">
+        <img class="navbar-logo" src="../../../_/img/logo.png"
+          alt="xmera Omnia Docs" width="170" height="63">
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link main-item" href="#">Software</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://xmera.de/funktionen/">Funktionen</a>
+            <a class="navbar-item" href="https://xmera.de/live-termin/">Live Termin</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link main-item" href="#">Service</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://xmera.de/infoservice/">Newsletter</a>
+            <a class="navbar-item" href="https://docs.xmera.de/">Dokumentation</a>
+          </div>
+        </div>
+        <a class="navbar-link main-item no-dropdown" href="https://xmera.de/downloads/">Downloads</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link main-item" href="#">Unternehmen</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://xmera.de/ueber-uns/">Über uns</a>
+            <a class="navbar-item" href="https://xmera.de/jobs/">Jobs</a>
+            <a class="navbar-item" href="https://xmera.de/blog/">Blog</a>
+            <a class="navbar-item" href="https://xmera.de/kontakt">Kontakt</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs" >
+        </div>
+      </div>
+    </div>
+    <div id="subbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <span class="control cta-wrap">
+            <a class="button is-primary" href="https://xmera.de/live-termin/">Live sehen</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="xmera-omnia-guide" data-version="4.3">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../anwenderhandbuch/bediengrundlagen.html">xmera Omnia Guide</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Anwenderhandbuch</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anwenderhandbuch/bediengrundlagen.html">Bediengrundlagen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anwenderhandbuch/benutzerbezogene-seiten.html">Benutzerbezogene Seiten</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anwenderhandbuch/dashboards.html">Dashboards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../anwenderhandbuch/objekte.html">Objekte</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Objektmodule</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/aufgaben.html">Aufgaben</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/dateien.html">Dateien</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/dokumentenmanagement.html">Dokumentenmanagement (DMS)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/dokumente.html">Dokumente</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/foren.html">Foren</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/kalender.html">Kalender</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/aufgaben-synchronisation.html">Aufgabensynchronisation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/tabellen.html">Tabellen</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/verlauf.html">Verlauf</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/wiki.html">Wiki</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/mitteilungen.html">Mitteilungen</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anwenderhandbuch/wiederholende-aufgaben.html">Wiederholende Aufgaben</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administratorhandbuch</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="objektklassen.html">Objektklassen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="objekte.html">Objekte</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="benutzer.html">Benutzer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="gruppen.html">Gruppen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rollen-rechte.html">Rollen und Rechte</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="aufgabentyp.html">Aufgabentyp</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="aufgabenstatus.html">Aufgabenstatus</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="workflow.html">Workflow</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="eigene-felder.html">Eigene Felder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="aufzaehlung.html">Aufzählungen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="konfiguration.html">Konfiguration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ldap-authentifizierung.html">LDAP-Authentifizierung</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="genehmigungs-workflows.html">Genehmigungs-Workflows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="eigene-bezeichnungen.html">Eigene Bezeichnungen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tabellenkonfiguration.html">Tabellenkonfiguration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="support.html">Support</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugins.html">Plugins</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="informationen.html">Informationen</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../xmera-omnia-dokumentation/latest/index.html"><strong>Zurück zur Hauptseite</strong></a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">xmera Omnia Guide</span>
+    <span class="version">4.3</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">xmera Omnia Demo Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">latest</a>
+        </li>
+        <li class="version">
+          <a href="../../../xmera-omnia-demo-guide/3.7/einfuehrung/index.html">3.7</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../xmera-omnia-dokumentation/latest/index.html">xmera Omnia Dokumentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../xmera-omnia-dokumentation/latest/index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../latest/anwenderhandbuch/bediengrundlagen.html">xmera Omnia Guide</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../latest/anwenderhandbuch/bediengrundlagen.html">latest</a>
+        </li>
+        <li class="version is-current">
+          <a href="../anwenderhandbuch/bediengrundlagen.html">4.3</a>
+        </li>
+        <li class="version">
+          <a href="../../4.2/anwenderhandbuch/bediengrundlagen.html">4.2</a>
+        </li>
+        <li class="version">
+          <a href="../../4.1/anwenderhandbuch/bediengrundlagen.html">4.1</a>
+        </li>
+        <li class="version">
+          <a href="../../4.0/anwenderhandbuch/bediengrundlagen.html">4.0</a>
+        </li>
+        <li class="version">
+          <a href="../../3.7/anwenderhandbuch/bediengrundlagen.html">3.7</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../xmera-omnia-dokumentation/latest/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../anwenderhandbuch/bediengrundlagen.html">xmera Omnia Guide</a></li>
+    <li>Administratorhandbuch</li>
+    <li><a href="eigene-felder.html">Eigene Felder</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">4.3</button>
+  <div class="version-menu">
+    <a class="version" href="../../latest/adminhandbuch/eigene-felder.html">latest</a>
+    <a class="version is-current" href="eigene-felder.html">4.3</a>
+    <a class="version" href="../../4.2/adminhandbuch/eigene-felder.html">4.2</a>
+    <a class="version" href="../../4.1/adminhandbuch/eigene-felder.html">4.1</a>
+    <a class="version" href="../../4.0/adminhandbuch/eigene-felder.html">4.0</a>
+    <a class="version" href="../../3.7/adminhandbuch/eigene-felder.html">3.7</a>
+  </div>
+</div>
+  <div class="edit-this-page"><a href="https://github.com/login?return_to=%2Fxmera-circle%2Fxo_docs">Seite bearbeiten</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Schnellzugriff" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Eigene Felder</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><style>
+.distance-25 {
+  display:block;
+  height:25px;
+}
+.flex-container {
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.video-container {
+  flex: 0 0 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.center {
+  text-align:center;
+}
+video {  width: 100%; }
+video,
+.image img,
+.imageblock img {
+  height: auto;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(31,32,68,.16);
+  -webkit-transition: all .7s cubic-bezier(.23,1,.32,1);
+  transition: all .7s cubic-bezier(.23,1,.32,1);
+  box-shadow: 0 2px 8px 0 rgba(31,32,68,.16);
+  border-color: #f3f4f4;
+  border-radius: 6px;
+}
+.videoblock {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.doc .imageblock.text-left{
+  align-items: flex-start;
+}
+.red {
+  color: #9e1030;
+}
+</style></p>
+</div>
+<div class="paragraph">
+<p>Eigene Felder bieten die Möglichkeit für Objekte und ihre Funktionsmodule individuelle Felder anzulegen, um Informationen zu dokumentieren, die mit der xmera Omnia Standardkonfiguration nicht abgebildet werden.</p>
+</div>
+<div class="paragraph">
+<p>Verwaltet werden <em>Eigene Felder</em> im Administrationsbereich im Menüpunkt <em>Eigene Felder</em>. Über dieses Menü gelangst Du in ihre Listenansicht.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_liste.png" alt="Eigene Felder Liste"></span></p>
+</div>
+<div class="paragraph">
+<p>Die <em>Eigenen Felder</em> werden für jedes Funktionsmodul getrennt angelegt.</p>
+</div>
+<div class="paragraph">
+<p>Funktionsmodule, für die <em>Eigene Felder</em> hinzugefügt werden können, sind in der folgenden Tabelle zu sehen.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bereich</th>
+<th class="tableblock halign-left valign-top">Funktionsmodul</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Objekt und Teammitglieder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objekte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Benutzer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gruppen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">Aufgabenmanagement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aufgaben</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aufgaben-Prioritäten</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aufgabenpakete</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tabellen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Dokumentenverwaltung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dokumente</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dokumentationskategorien</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DMS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Zeitmanagement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aufgewendete Zeit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aktivitäten</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Für jedes Funktionsmodul, für das mindestens ein eigenes Feld angelegt wurde, ist in der Listenansicht ein Tab vorhanden. Wird ein Funktionsmodul im Tab ausgewählt, werden die zugeordneten <em>Eigenen Felder</em> angezeigt.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_feldformate"><a class="anchor" href="#_feldformate"></a>Feldformate</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Es stehen eine Vielzahl an Feldformaten zur Verfügung.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feldtyp</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aufgabenpaket</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Aus einer Liste der Aufgabenpakete können ein oder mehrere Pakete gewählt werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Benutzer</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Aus einer Liste der Objektmitglieder können eine oder mehrere Objektmitglied(er) gewählt werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ja/Nein Auswahl</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DMS Dokument Rev.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Download der aktuellen Version eines Dokuments im DMS.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datei</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Eine Datei kann zugeordnet werden</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ein Datum kann erfasst werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eigenschaft/Wert-Paar</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ein Wertepaar aus einem Wert und einer Beschreibung kann zugeordnet werden.<br>
+(Bsp.: 1»sehr gut, 2»gut, 3» befriedigend, &#8230;&#8203;)<br>
+Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer Felder des Funktionsmoduls ergibt.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fließkommazahl</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Eine Fließkommazahl kann zugeordnet werden.<br>
+Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer Felder des Funktionsmoduls ergibt.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kombinationsmatrix</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Die Kombinationsmatrix definiert das Ergebnis einer Kombination aus zwei Feldern mit dem Format Eigenschaft/Wert-Paar. Jeder Wertekombination kann ein Ergebnis (Text) und eine Farbe zugeordnet werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Langer Text</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ein mehrzeiliger Text, der formatierbar ist.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Link</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ein URL-Link kann erfasst werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Liste</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Aus einer Liste, die im <em>Eigenen Feld</em> definiert wird können ein oder mehrere Wert(e) gewählt werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objekt</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Aus einer Liste mit im System bestehenden Objekten können ein oder mehrere Wert(e) gewählt werden. Den Umfang der Objekte, die dem Benutzer als Auswahl angezeigt werden, kann der Administrator wählen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>alle: Alle aktiven Objekte des Systems stehen zur Auswahl,</p>
+</li>
+<li>
+<p>nur sichtbare Objekte: Nur die für den Benutzer sichtbaren Objekte stehen zur Auswahl,</p>
+</li>
+<li>
+<p>nur öffentliche Objekte: Nur Objekte, die als öffentlich markiert wurden, stehen zur Auswahl,</p>
+</li>
+<li>
+<p>nur sichtbare Objekte der Klasse: Nur Objekte einer oder mehrerer Objektklassen stehen zur Auswahl.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objektklassen Master</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Aus einer Liste mit im System bestehenden Objektklassen können ein oder mehrere Wert(e) gewählt werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ein einzeiliger Text, der formatierbar ist.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Eine ganze Zahl</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Die vollständige Liste der Feldformate wird nicht für jedes Funktionsmodul angezeigt.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Die Parametrierung der einzelnen Feldformate ist verschieden. Allen eigenen Feldern gemeinsam ist</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>der Name (Definiert das <em>Eigene Feld</em>),</p>
+</li>
+<li>
+<p>die Beschreibung (Wird als Tooltip per Mouseover dem Anwender angezeigt) und</p>
+</li>
+<li>
+<p>Erforderlich (Angekreuzt wird das Feld zum Pflichtfeld).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Wenn nach dem Feld sinnvoll gefiltert werden kann, so wird die Auswahl <em>Als Filter benutzen</em> angeboten.</p>
+</div>
+<div class="paragraph">
+<p>Bei Auswahlfeldern (z.B. Listen, Benutzern oder Aufgabenpaketen) ist im Standard nur ein Wert erlaubt. Über Aktivieren der Auswahl <em>Mehrere Werte</em> kann auf Mehrfachauswahl umgestellt werden.<br>
+Weiter kann bei der <em>Anzeige</em> der Auswahl zwischen der Dropdown-Liste und der Checkbox gewählt werden.</p>
+</div>
+<div class="paragraph">
+<p>Abhängig vom Funktionsmodul, dem das <em>Eigene Feld</em> zugeordnet wird, besteht die Möglichkeit, die Nutzung des Feldes einzuschränken. Mögliche Einschränkungen sind</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sichtbarkeit (Rollen)</p>
+</li>
+<li>
+<p>Aufgabentyp</p>
+</li>
+<li>
+<p>Objektklassen</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_neues_eigenes_feld_erstellen"><a class="anchor" href="#_neues_eigenes_feld_erstellen"></a>Neues Eigenes Feld erstellen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Durch Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_neues-feld.png" alt="Neues Feld"></span> wird der Prozess zur Erstellung eines eigenen Feldes gestartet. Als erstes öffnet ein Fenster, in dem das Funktionsmodul, dem das eigene Feld zugeordnet wird, auszuwählen ist.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_neu_funktionsmodul.png" alt="Neues Feld | Funktionsmodul wählen"></span></p>
+</div>
+<div class="paragraph">
+<p>Mit <em>Weiter »</em>  gelangst Du in das Bearbeitungsformular des eigenen Feldes. Als erstes sollte das <a href="#_feldformate">Format</a> festgelegt werden, da die folgenden Attribute von dem Feldformat abhängen.</p>
+</div>
+<div class="paragraph">
+<p>Im folgenden Bild sind die Einstellungsmöglichkeiten für ein Textfeld zum Funktionsmodul <em>Aufgaben</em> zu sehen.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_neu_parameter.png" alt="Neues Feld | Parametrieren"></span></p>
+</div>
+<div class="paragraph">
+<p>Pflichtfeld ist der Name, über den das Feld definiert ist. Die weiteren Attribute sind abhängig vom gewählten Format. Basisinformationen sind dem Kapitel <a href="#_feldformate">Feldformate</a> zu entnehmen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_eigenes_feld_bearbeiten"><a class="anchor" href="#_eigenes_feld_bearbeiten"></a>Eigenes Feld bearbeiten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Zu jedem Feld aus der Listenansicht gibt es mehrere Bearbeitungsoptionen.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Feldparametrierung bearbeiten</p>
+</li>
+<li>
+<p>Reihenfolge bearbeiten</p>
+</li>
+<li>
+<p>Kopieren</p>
+</li>
+<li>
+<p>Löschen</p>
+</li>
+</ol>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Feldparametrierung bearbeiten</dt>
+<dd>
+<p>Durch Klick auf den Feldnamen wird die Parameteriermaske des eigenen Feldes aufgerufen. Bis auf das Format können alle Parameter angepasst werden. Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_speichern.png" alt="Speichern"></span> werden die Änderungen übernommen.</p>
+</dd>
+<dt class="hdlist1">Reihenfolge bearbeiten</dt>
+<dd>
+<p>Die Reihenfolge, in der die eigenen Felder im Objekt angezeigt werden, ist abhängig von der Reihenfolge, in der das eigene Feld in der Liste der <em>Eigenen Felder</em> steht. Durch Klick und Halten der linken Maustaste auf das Icon <span class="image"><img src="_images/adminhandbuch/button_verschieben.png" alt="Verschieben"></span> kann die Zeile mit dem <em>Eigenen Feld</em> in der Liste verschoben werden.<br></p>
+<div class="paragraph">
+<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_bearbeiten_reihenfolge.png" alt="Reihenfolge Eigene Felder bearbeiten"></span></p>
+</div>
+<div class="paragraph">
+<p>An der Position, an der die linke Maustaste gelöst wird, wird das <em>Eigene Feld</em> platziert.</p>
+</div>
+</dd>
+<dt class="hdlist1">Kopieren</dt>
+<dd>
+<p>Um die Erstellung von eigenen Feldern zu erleichtern, kann auch ein bestehendes eigenes Feld kopiert werden. Beim Kopieren (Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_kopieren.png" alt="Eigenes Feld kopieren"></span>) wird bis auf den Namen die Konfiguration des Ausgangsfelds übernommen.<br></p>
+<div class="paragraph">
+<p>Mit Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_anlegen.png" alt="Eigenes Feld anlegen"></span> wird das neue Feld erzeugt.</p>
+</div>
+</dd>
+<dt class="hdlist1">Löschen</dt>
+<dd>
+<p>Durch Klick auf den Button <span class="image"><img src="_images/adminhandbuch/button_loeschen.png" alt="Eigenes Feld löschen"></span> wird nach der Bestätigung in einem Pop-Up-Fenster das <em>Eigene Feld</em> gelöscht.<br></p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Mit dem Löschen des Feldes sind alle erfassten Daten gelöscht! Bei Unsicherheit sollte das eigene Feld nur im Objekt deaktiviert werden. So bleiben die Informationen erhalten und können durch erneutes Aktivieren des Feldes wieder genutzt werden.
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mit_eigenen_feldern_rechnen"><a class="anchor" href="#_mit_eigenen_feldern_rechnen"></a>Mit eigenen Feldern rechnen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mit einigen Feldformaten können einfache Berechnungen durchgeführt werden. Diese Funktion wird in folgenden Formaten unterstützt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>(Ganz-)Zahl,</p>
+</li>
+<li>
+<p>Fließkommazahl,</p>
+</li>
+<li>
+<p>Eigenschaft/Wert-Paare,</p>
+</li>
+<li>
+<p>Kombinationsmatrix.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Bei diesen Formaten wird die Konfiguration zur Berechnung angezeigt.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/adminhandbuch/eigene-felder_berechnen.png" alt="Mit eigenen Feldern rechnen"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Für das Format <em>Liste</em> wird Dir zwar auch die Konfiguration zur Berechnung angezeigt. Doch sie funktioniert aktuell nicht.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Zu den möglichen Berechnungen gehören:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Minimum <code>min()</code></p>
+</li>
+<li>
+<p>Maximum <code>max()</code></p>
+</li>
+<li>
+<p>Summe <code>sum()</code></p>
+</li>
+<li>
+<p>Produkt <code>product()</code></p>
+</li>
+<li>
+<p>Division <code>division()</code></p>
+</li>
+<li>
+<p>Zuordnung <code>mapping()</code></p>
+</li>
+<li>
+<p>Benutzerdefiniert <code>custom()</code></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Unterstützt ein eigenes Feld eine Mehrfachauswahl, kann keine Berechnung durchgeführt werden.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-wrap">
+    <aside class="footer-widget-wrap widget-area widget-area-default cf column" role="complementary">
+      <div id="footer-widget-1" class="footer-widget">
+        <section id="custom_html-6" class="widget_text widget widget_custom_html">
+          <a class="navbar-item" href="https://xmera.de">
+            <img class="navbar-logo" src="../../../_/img/logo-white.png" alt="xmera Omnia Docs" width="170" height="63">
+          </a>
+          <p>xmera Omnia bietet Dir eine Plattform, auf der Du Informationssicherheitsmanagement und IT-Betrieb intelligent verbindest.</p>
+          <nav id="social-nav">
+  <a href="https://www.linkedin.com/company/xmera-solutions"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+  <a href="https://github.com/xmera-circle"><i class="fa fa-github" aria-hidden="true"></i></a>
+</nav>
+        </section>
+      </div>
+    </aside>
+    <div class="footer-menu-wrap column middle">
+      <nav id="footer-nav navbar">
+        <h5 class="headline">Navigation</h5>
+        <div>
+          <div class="navbar-item"><a href="https://xmera.de/">Startseite</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/funktionen/">Funktionen</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/live-termin/">Live Termin</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/infoservice/">Newsletter</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/dokumentation/">Dokumentation</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/downloads/">Downloads</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/ueber-uns/">Über uns</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/jobs/">Jobs</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/blog/">Blog</a></div>
+          <div class="navbar-item"><a href="https://xmera.de/kontakt/">Kontakt</a></div>
+        </div>
+      </nav>
+    </div>
+      <div class="footer-menu-wrap column right">
+        <nav id="footer-nav navbar">
+          <h5 class="headline">Rechtliche Hinweise</h5>
+          <div>
+            <div class="navbar-item"><a href="https://xmera.de/impressum/">Impressum</a></div>
+            <div class="navbar-item"><a href="https://xmera.de/datenschutz/">Datenschutz</a></div>
+            <div class="navbar-item"><a href="https://xmera.de/bildnachweis/">Bildnachweise</a></div>
+            <div class="navbar-item"><a href="https://xmera.de/reporting-security-issues/">Security</a></div>
+          </div>
+        </nav>
+      </div>
+  </div>
+  <div class="site-info">
+    <span>© 2021 - 2024 xmera Solutions.</span>
+  </div>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

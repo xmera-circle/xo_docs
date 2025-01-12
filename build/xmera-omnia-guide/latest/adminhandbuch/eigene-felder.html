@@ -239,6 +239,9 @@
           <a href="../anwenderhandbuch/bediengrundlagen.html">latest</a>
         </li>
         <li class="version">
+          <a href="../../4.3/anwenderhandbuch/bediengrundlagen.html">4.3</a>
+        </li>
+        <li class="version">
           <a href="../../4.2/anwenderhandbuch/bediengrundlagen.html">4.2</a>
         </li>
         <li class="version">
@@ -272,6 +275,7 @@
   <button class="version-menu-toggle" title="Show other versions of page">latest</button>
   <div class="version-menu">
     <a class="version is-current" href="eigene-felder.html">latest</a>
+    <a class="version" href="../../4.3/adminhandbuch/eigene-felder.html">4.3</a>
     <a class="version" href="../../4.2/adminhandbuch/eigene-felder.html">4.2</a>
     <a class="version" href="../../4.1/adminhandbuch/eigene-felder.html">4.1</a>
     <a class="version" href="../../4.0/adminhandbuch/eigene-felder.html">4.0</a>
@@ -685,7 +689,7 @@ Mit dem Löschen des Feldes sind alle erfassten Daten gelöscht! Bei Unsicherhei
 <h2 id="_mit_eigenen_feldern_rechnen"><a class="anchor" href="#_mit_eigenen_feldern_rechnen"></a>Mit eigenen Feldern rechnen</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Mit einigen Feldformaten können einfache Berechnungen durchgeführt werden. Diese Funktion wird in folgenden Formaten unterstützt:</p>
+<p>Mit einigen Feldformaten können Berechnungen durchgeführt werden. Diese Funktion wird in folgenden Formaten unterstützt:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -709,17 +713,8 @@ Mit dem Löschen des Feldes sind alle erfassten Daten gelöscht! Bei Unsicherhei
 <div class="paragraph">
 <p><span class="image"><img src="_images/adminhandbuch/eigene-felder_berechnen.png" alt="Mit eigenen Feldern rechnen"></span></p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Für das Format <em>Liste</em> wird Dir zwar auch die Konfiguration zur Berechnung angezeigt. Doch sie funktioniert aktuell nicht.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>In den unterstützen Feldformaten ist rechts neben dem Formelfeld ein Info-Icon. Wenn Du es anklickst, bekommst Du eine Übersicht der für das vorliegende Format unterstützten Funktionen. Im obigen Bild ist das Icon umrandet.</p>
 </div>
 <div class="paragraph">
 <p>Zu den möglichen Berechnungen gehören:</p>
@@ -727,39 +722,39 @@ Für das Format <em>Liste</em> wird Dir zwar auch die Konfiguration zur Berechnu
 <div class="ulist">
 <ul>
 <li>
-<p>Minimum <code>min()</code></p>
+<p>Mittelwert <code>average()</code></p>
 </li>
 <li>
-<p>Maximum <code>max()</code></p>
+<p>Mittelwert ohne Nil Werte <code>average_net_of_nil()</code></p>
 </li>
 <li>
-<p>Summe <code>sum()</code></p>
-</li>
-<li>
-<p>Produkt <code>product()</code></p>
+<p>Benutzerdefiniert <code>custom()</code></p>
 </li>
 <li>
 <p>Division <code>division()</code></p>
 </li>
 <li>
-<p>Zuordnung <code>mapping()</code></p>
+<p>Maximum <code>max()</code></p>
 </li>
 <li>
-<p>Benutzerdefiniert <code>custom()</code></p>
+<p>Minimum <code>min()</code></p>
+</li>
+<li>
+<p>Produkt <code>product()</code></p>
+</li>
+<li>
+<p>Auf Ganzzahl runden <code>round_to_int()</code></p>
+</li>
+<li>
+<p>Summe <code>sum()</code></p>
+</li>
+<li>
+<p>Zuordnung <code>mapping()</code></p>
 </li>
 </ul>
 </div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-Unterstützt ein eigenes Feld eine Mehrfachauswahl, kann keine Berechnung durchgeführt werden.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>In den Formeln können negative Vorzeichen und fixe Zahlenwerte verwendet werden. Du kannst Funktionen auch verschachteln und Ergebnisfelder einbinden, um komplexere Berechnungen durchführen zu können.</p>
 </div>
 </div>
 </div>
