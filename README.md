@@ -2,7 +2,7 @@
 
 Developer project of xmera Omnia Documentation
 
-![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-1.7.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v5.0.z-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
+![xmera Omnia Documentation Version](https://img.shields.io/badge/xmera_Omnia_Documentation-1.8.0-red) ![xmera Omnia Version](https://img.shields.io/badge/xmera_Omnia-v5.1.z-blue) ![Language Support](https://img.shields.io/badge/Languages-de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
 
 The xmera Omnia Documentation is written in AsciiDoc and convertible into HTML by Antora or converitble into a pdf file.
 
@@ -55,4 +55,4 @@ All notable changes to this project will be reported in the [changelog](https://
 
 ## License
 
-xmera Omnia Documentation © 2022-2025 by [xmera Solutions GmbH](https://xmera.de) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
+xmera Omnia Documentation © 2022-2026 by [xmera Solutions GmbH](https://xmera.de) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
