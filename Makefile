@@ -1,24 +1,6 @@
-# Set default variables
-#
-#ifndef TAG
-#override TAG = 3.4.1
-#endif
+SHELL :=/bin/bash
 
-# Assign a referenced variable
-#
-#REDMINE=redmine_${REDMINE_VERSION}
-
-# Assign an output of a shell command
-#
-#REDMINE_MOUNT=-v $(shell pwd)/${REDMINE}:${HOME}/redmine
-#USER_NAME=$(shell whoami)
-#GROUP_NAME=$(shell id -g -n)
-
-#CASE_NAME=$(shell ruby staging_case ${CASE} ${REDMINE})
-#XMERA_ROOT=${SOLUTION}_${TAG}
-#PWD=$(shell pwd)
-#TIMESTAMP=$(shell date +"%Y-%m-%d_%H-%M-%S")
-PATH_TO_FILE=$(shell npm bin)
+PATH_TO_FILE:= ./node_modules/.bin
 ifneq ("$(wildcard $(PATH_TO_FILE))","")
     LOCAL=1
 else
@@ -32,7 +14,7 @@ help: #: Show help topics
 	@grep "#:" Makefile* | grep -v "@grep" | sort | sed "s/\([A-Za-z_ -]*\):.*#\(.*\)/$$(tput setaf 3)\1$$(tput sgr0)\2/g"
 
 .PHONY: html
-html: #: Generate antora html output
+html: #: Generate Antora HTML output
 ifeq ($(LOCAL), 1)
 	echo '--> npm is installed locally'; \
 	${PATH_TO_FILE}/antora playbook.yml;
@@ -41,20 +23,34 @@ else
 	antora playbook.yml;
 endif
 
-.PHONY: html_browser 
-html_browser: #: Generate antora html output AND open index.html in browser
-ifeq ($(LOCAL), 1)
-	echo '--> npm is installed locally'; \
-	${PATH_TO_FILE}/antora playbook.yml --stacktrace; \
-	firefox build/index.html;
-else
-	echo '--> npm is installed globally'; \
-	antora playbook.yml; \
-	firefox build/index.html;
-endif
+.PHONY: open_browser
+open_browser: #: Open build/index.html in browser
+	@if xdg-open build/index.html 2>/dev/null; then \
+		:; \
+	elif open build/index.html 2>/dev/null; then \
+		:; \
+	elif firefox build/index.html 2>/dev/null; then \
+		:; \
+	else \
+		echo "================================================"; \
+		echo -e "\e[32mINFO\e[0m: Build complete: build/index.html"; \
+		echo ""; \
+		echo -e "\e[33mWARN\e[0m: No local browser available."; \
+		echo -e "\e[32mINFO\e[0m: Open http://$$(hostname):8000 in your browser"; \
+		echo "================================================"; \
+		bundle exec rake server; \
+	fi
 
+.PHONY: server
+server: #: Start HTTP server on port 8000 in build directory
+	@bundle exec rake server
+
+.PHONY: html_browser
+html_browser: html open_browser #: Generate Antora HTML output AND open index.html in browser
+
+## Not working right now!!! ##
 .PHONY: pdf
-pdf: #: Generate asciidoctor pdf document
+pdf: #: Generate Asciidoctor pdf document
 	@cd ./pdf; \
 	asciidoctor-pdf xo-doc.adoc; \
 	cd ..; \
