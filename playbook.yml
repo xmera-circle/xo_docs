@@ -8,7 +8,7 @@ content:
   - url: .
     branches: HEAD
   - url: ../xo_guide
-    branches: [master, '5.0', '4.4', '4.3', '4.2', '4.1', '4.0', '3.7']
+    branches: [master, '5.1', '5.0', '4.4', '4.3', '4.2', '4.1', '4.0', '3.7']
 ui:
   bundle:
     url: https://github.com/xmera-circle/antora-ui-omnia/releases/download/1.0.2/ui-bundle.zip
