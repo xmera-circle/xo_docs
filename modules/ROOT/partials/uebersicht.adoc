@@ -1,14 +1,6 @@
 pass:[<div class="overview">
   <div class="responsive">
     <div class="gallery">
-      <a href="/xmera-omnia-demo-guide/latest/einfuehrung/index.html">
-        <img src="_images/icon-demo-guide.png" alt="Demo Guide" width="300" height="300">
-        <div class="desc">Demo Guide</div>
-      </a>
-    </div>
-  </div>
-  <div class="responsive">
-    <div class="gallery">
       <a href="/xmera-omnia-guide/latest/anwenderhandbuch/bediengrundlagen.html">
         <img src="_images/icon-anwenderhandbuch.png" alt="Anwenderhandbuch" width="300" height="300">
         <div class="desc">Anwenderhandbuch</div>

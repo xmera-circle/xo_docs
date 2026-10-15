@@ -3,8 +3,3 @@
 .xmera Omnia Guide
 * xref:xmera-omnia-guide:anwenderhandbuch:bediengrundlagen.adoc[Anwenderhandbuch]
 * xref:xmera-omnia-guide:adminhandbuch:objektklassen.adoc[Adminhandbuch]
-
-.xmera Omnia Demo Guide
-* xref:xmera-omnia-demo-guide:einfuehrung:index.adoc[Einführung]
-* xref:xmera-omnia-demo-guide:isms-iso-27k:index.adoc[ISO27k Demo]
-* xref:xmera-omnia-demo-guide:isms-cisis-12:index.adoc[CISIS12 Demo]

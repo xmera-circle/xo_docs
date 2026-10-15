@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Objekte :: xmera Omnia Dokumentation</title>
     <link rel="canonical" href="https://docs.xmera.de/xmera-omnia-guide/latest/anwenderhandbuch/objekte.html">
-    <meta name="generator" content="Antora 3.1.14">
+    <meta name="generator" content="Antora 3.2.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/font-awesome/css/font-awesome.min.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -181,6 +181,9 @@
     <a class="nav-link" href="../adminhandbuch/ldap-authentifizierung.html">LDAP-Authentifizierung</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../adminhandbuch/applikationen.html">Applikationen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../adminhandbuch/genehmigungs-workflows.html">Genehmigungs-Workflows</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -214,17 +217,6 @@
     <span class="version">latest</span>
   </div>
   <ul class="components">
-    <li class="component">
-      <a class="title" href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">xmera Omnia Demo Guide</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">latest</a>
-        </li>
-        <li class="version">
-          <a href="../../../xmera-omnia-demo-guide/3.7/einfuehrung/index.html">3.7</a>
-        </li>
-      </ul>
-    </li>
     <li class="component">
       <a class="title" href="../../../xmera-omnia-dokumentation/latest/index.html">xmera Omnia Dokumentation</a>
       <ul class="versions">
@@ -629,7 +621,7 @@ Ein Import von Objekten ohne zugewiesene Objektklasse ist auch möglich. Diese O
 <td class="tableblock halign-left valign-top"><p class="tableblock">project_type_id</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">String</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Kennung der Objektklasse, von der das zu erzeugende Objekt abgeleitet werden soll. (Pflichtfeld)</p>
+<p>Kennung der Objektklasse, von der das zu erzeugende Objekt abgeleitet werden soll.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1043,6 +1035,32 @@ Aus einem überlagerten Objekt geerbte Mitglieder und deren Rollen können nicht
 </div>
 <div class="paragraph">
 <p>Es wird der Eintrag des ausgewählten Mitarbeiters aufgeklappt. Durch An- oder Abwahl können die Rollen verändert werden. Rollen, die ein Mitglied von einer Gruppe oder dem vorgelagerten Objekt geerbt hat, können nicht verädert werden. Werden alle Rollen eines Mitglieds gelöscht, wird dieser Anwender als Mitglied in dem Objekt entfernt.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_objekte_verwalten"><a class="anchor" href="#_objekte_verwalten"></a>Objekte verwalten</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Unter dem 3-Punkte Menü auf der Übersichtsseite eines Objektes, befinden sich Menüpunkte um ein Objekt zu schließen oder zu löschen.</p>
+</div>
+<div class="sect2">
+<h3 id="_objekt_schließen"><a class="anchor" href="#_objekt_schließen"></a>Objekt schließen</h3>
+<div class="paragraph">
+<p><span class="image"><img src="_images/anwenderhandbuch/button_sperren.png" alt="button sperren"></span>: Ein geschlossenes Objekt steht mit seinen Informationen den Anwendern zur Verfügung, es kann aber nicht weiter bearbeitet werden. Durch einen Klick auf den Button <span class="image"><img src="_images/anwenderhandbuch/button_entsperren.png" alt="button entsperren"></span> kann das Objekt wieder geöffnet werden.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_objekt_löschen"><a class="anchor" href="#_objekt_löschen"></a>Objekt löschen</h3>
+<div class="paragraph">
+<p><span class="image"><img src="_images/anwenderhandbuch/button_loeschen.png" alt="button loeschen"></span>: Löscht das Objekt und dessen verbundene Objekte. Um eine versehentliche Löschung zu vermeiden, muss die Löschung gesondert bestätigt werden.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/anwenderhandbuch/objekte_loeschbestaetigung.png" alt="objekte loeschbestaetigung"></span></p>
+</div>
+<div class="paragraph">
+<p>In dieser Bestätigung werden die verbundenen Objekte gelistet und es muss ein Bestätigungscode eingegeben werden.</p>
 </div>
 </div>
 </div>

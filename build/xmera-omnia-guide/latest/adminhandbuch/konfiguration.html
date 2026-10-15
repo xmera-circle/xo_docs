@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Konfiguration :: xmera Omnia Dokumentation</title>
     <link rel="canonical" href="https://docs.xmera.de/xmera-omnia-guide/latest/adminhandbuch/konfiguration.html">
-    <meta name="generator" content="Antora 3.1.14">
+    <meta name="generator" content="Antora 3.2.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/font-awesome/css/font-awesome.min.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -181,6 +181,9 @@
     <a class="nav-link" href="ldap-authentifizierung.html">LDAP-Authentifizierung</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="applikationen.html">Applikationen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="genehmigungs-workflows.html">Genehmigungs-Workflows</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -214,17 +217,6 @@
     <span class="version">latest</span>
   </div>
   <ul class="components">
-    <li class="component">
-      <a class="title" href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">xmera Omnia Demo Guide</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">latest</a>
-        </li>
-        <li class="version">
-          <a href="../../../xmera-omnia-demo-guide/3.7/einfuehrung/index.html">3.7</a>
-        </li>
-      </ul>
-    </li>
     <li class="component">
       <a class="title" href="../../../xmera-omnia-dokumentation/latest/index.html">xmera Omnia Dokumentation</a>
       <ul class="versions">
@@ -446,6 +438,12 @@ video,
 <p>Definiert die Anzahl der Einträge im RSS-Feed, den die Anwendung bereitstellt.</p>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reaktionsbutton aktiviert</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Zeigt einen Reaktionsbutton für Aufgaben, Journale, Mitteilungen, Kommentare und Forenthemen an.</p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -559,6 +557,12 @@ Das kann für die Ausführung von automatisierten Aufgaben relevant sein, sie vo
 <td class="tableblock halign-left valign-top"><p class="tableblock">Menü zum Anlegen neuer Objekte</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Blendet je nach Auswahl spezielle Menüpunkte ein, wie z.B. das <strong>+</strong> im folgenden Bild, mit denen neue Objekte erzeugt werden können. <span class="image"><img src="_images/adminhandbuch/konfiguration_anzeige_menue_plus.png" alt="konfiguration anzeige menue plus"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JavaScript-basierte Tabellensortierung in Wiki-Inhalten</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt fest, ob Tabellenspalten sortierbar sein sollen.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -736,7 +740,7 @@ Das kann für die Ausführung von automatisierten Aufgaben relevant sein, sie vo
 </div>
 </div>
 <div class="sect1">
-<h2 id="_api"><a class="anchor" href="#_api"></a>API</h2>
+<h2 id="_integrationen"><a class="anchor" href="#_integrationen"></a>Integrationen</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -760,6 +764,12 @@ Das kann für die Ausführung von automatisierten Aufgaben relevant sein, sie vo
 <td class="tableblock halign-left valign-top"><p class="tableblock">JSONP Unterstützung aktivieren</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Daten können im JSON-Format systemübergreifend synchronisiert werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Webhooks aktivieren</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Webhooks ermöglichen die Echtzeit-Kommunikation mit externen Systemen bei bestimmten Ereignissen wie dem Erstellen, Aktualisieren oder Löschen von Daten.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -926,6 +936,12 @@ E-Mail-Benachrichtigungen und -erinnerungen werden an alle Adressen gesendet.
 <p>Beim Anlegen eines neuen Benutzers wird das Attribut <em>Zeitzone</em> gesetzt. Diese Einstellung kann im Rahmen der Bearbeitung geändert werden.</p>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Automatisch beobachten</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt fest, welche Aufgaben standardmäßig von Benutzern beobachtet werden sollen. Zur Auswahl stehen <em>Aufgaben von mir erstellt</em>, <em>Aufgaben zu denen ich beigetragen habe</em> und <em>Mir zugewiesene Aufgaben</em>.</p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -983,6 +999,25 @@ Eine Verknüpfung kann jederzeit manuell aufgehoben und wieder hergestellt werde
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anhänge beim Kopieren einer Aufgabe auch kopieren</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt fest, ob Abhänge beim Kopieren einer Aufgabe mitkopiert werden sollen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ja » Die Anhänge werden kopiert.</p>
+</li>
+<li>
+<p>Nein » Die Anhänge werden nicht kopiert.</p>
+</li>
+<li>
+<p>Nachfragen » Zeigt beim Kopierprozess eine Option an, mit der sich das Mitkopieren der Anhänge wahlweise deaktivieren lässt.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Objektübergreifende Unteraufgaben erlauben</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Mit der Auswahl wird festgelegt, zu welchen Objekten Unteraufgaben zugeordnet werden können:</p>
@@ -1020,9 +1055,34 @@ Eine Verknüpfung kann jederzeit manuell aufgehoben und wieder hergestellt werde
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anzeigeformat der Aufgabenzuweisung</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt das Anzeigeformat der Aufgabenzuweisung fest:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Benutzer dann Gruppen » Listet zunächst Benutzer und anschließend Gruppen</p>
+</li>
+<li>
+<p>Gruppen dann Benutzer » Listet zunächst Gruppen und anschließend Benutzer</p>
+</li>
+<li>
+<p>Benutzer sortiert nach Gruppen » Listet Benutzer sortiert nach ihren Gruppen</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Aktuelles Datum als Beginn für neue Aufgaben verwenden</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Beim Anlegen einer neuen Aufgabe wird automatisch das aktuelle Datum in das Feld <em>Beginn</em> eingetragen.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standardmäßiges Abgabedatum für neue Aufgaben aktivieren</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ermöglicht das Einstellen eines Abgabedatums relativ zum heutigen Tag</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1036,6 +1096,12 @@ Eine Verknüpfung kann jederzeit manuell aufgehoben und wieder hergestellt werde
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Wird die Option <em>Aufgabenstatus</em> gewählt, so kann für jeden Aufgabenstatus der Fortschritt in % vordefiniert werden.<br>
 Wird die Option <em>Aufgaben-Feld % erledigt</em> gewählt, trägt der Anwender den Fortschritt selbst in das Aufgabenformular ein.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intervalloptionen für %-erledigt</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ermöglicht das Einstellen für %-erledigt in Fünfer- oder Zehnerschritten.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1147,6 +1213,21 @@ Zusätzlich kann für jedes Objekt eine eigene Standardabfrage konfiguriert werd
 </table>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Standard-Spalten für verknüpfte und untergeordnete Aufgaben</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spaltenauswahl</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt fest, welche Informationen in der Aufgabenliste angezeigt werden.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spaltenüberschriften anzeigen</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt fest, ob die Spaltenüberschriften angezeigt werden sollen.</p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1188,6 +1269,12 @@ Zusätzlich kann für jedes Objekt eine eigene Standardabfrage konfiguriert werd
 <td class="tableblock halign-left valign-top"><p class="tableblock">Akzeptiere Zeitbuchungen in der Zukunft</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Bei Auswahl werden auch Zeitbuchungen für die Zukunft akzeptiert.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zeiterfassung für geschlossene Aufgaben erlauben</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Legt fest, ob Zeiterfassungen auch für geschlossene Aufgaben erlaubt sind</p>
 </div></div></td>
 </tr>
 <tr>

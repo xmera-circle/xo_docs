@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Eigene Felder :: xmera Omnia Dokumentation</title>
     <link rel="canonical" href="https://docs.xmera.de/xmera-omnia-guide/latest/adminhandbuch/eigene-felder.html">
-    <meta name="generator" content="Antora 3.1.14">
+    <meta name="generator" content="Antora 3.2.1">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <link rel="stylesheet" href="../../../_/font-awesome/css/font-awesome.min.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -181,6 +181,9 @@
     <a class="nav-link" href="ldap-authentifizierung.html">LDAP-Authentifizierung</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="applikationen.html">Applikationen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="genehmigungs-workflows.html">Genehmigungs-Workflows</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -214,17 +217,6 @@
     <span class="version">latest</span>
   </div>
   <ul class="components">
-    <li class="component">
-      <a class="title" href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">xmera Omnia Demo Guide</a>
-      <ul class="versions">
-        <li class="version is-latest">
-          <a href="../../../xmera-omnia-demo-guide/latest/einfuehrung/index.html">latest</a>
-        </li>
-        <li class="version">
-          <a href="../../../xmera-omnia-demo-guide/3.7/einfuehrung/index.html">3.7</a>
-        </li>
-      </ul>
-    </li>
     <li class="component">
       <a class="title" href="../../../xmera-omnia-dokumentation/latest/index.html">xmera Omnia Dokumentation</a>
       <ul class="versions">
@@ -491,6 +483,12 @@ Das Feld kann das Ergebnis einer Rechnung sein, dass sich aus den Werten anderer
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fortschrittsbalken</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Grafische Fortschrittsdarstellung. Verfügbar als Fünfer- oder Zehnerskala.</p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kombinationsmatrix</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Die Kombinationsmatrix definiert das Ergebnis einer Kombination aus zwei Feldern mit dem Format Eigenschaft/Wert-Paar. Jeder Wertekombination kann ein Ergebnis (Text) und eine Farbe zugeordnet werden.</p>
@@ -590,6 +588,33 @@ Die vollständige Liste der Feldformate wird nicht für jedes Funktionsmodul ang
 <div class="paragraph">
 <p>Bei Auswahlfeldern (z.B. Listen, Benutzern oder Aufgabenpaketen) ist im Standard nur ein Wert erlaubt. Über Aktivieren der Auswahl <em>Mehrere Werte</em> kann auf Mehrfachauswahl umgestellt werden.<br>
 Weiter kann bei der <em>Anzeige</em> der Auswahl zwischen der Dropdown-Liste und der Checkbox gewählt werden.</p>
+</div>
+<div class="paragraph">
+<p>Eigene Felder mit den Feldformaten <em>Boolean</em>, <em>Datum</em>, <em>Liste</em>, <em>Zahl</em> und <em>Text</em> unterstützen das Attribut <em>Werte mit URL verknüpfen</em>. Durch bestimmte Variablen lassen sich damit benutzerdefinierte Links erstellen.
+Die möglichen Variablen sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>%value%</code>: Wert des eigenen Feldes</p>
+</li>
+<li>
+<p><code>%id%</code>: ID des zugehörigen Funktionsmoduls des eigenen Feldes (z.B. Aufgabe, Benutzer etc.)</p>
+</li>
+<li>
+<p><code>%project_id%</code>: ID des zugehörigen Objektes</p>
+</li>
+<li>
+<p><code>%project_identifier%</code>: Kennzeichnung des zugehörigen Objektes</p>
+</li>
+<li>
+<p><code>%m1%, %m2%&#8230;&#8203;</code>: Erfassungsgruppen des regulären Ausdrucks</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Beispiel um einen Link zu einer Aufgabe zu erstellen:
+<code>/issues/%value%</code></p>
 </div>
 <div class="paragraph">
 <p>Abhängig vom Funktionsmodul, dem das <em>Eigene Feld</em> zugeordnet wird, besteht die Möglichkeit, die Nutzung des Feldes einzuschränken. Mögliche Einschränkungen sind</p>
