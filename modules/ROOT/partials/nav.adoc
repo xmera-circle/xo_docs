@@ -1,5 +1,2 @@
-* xref:index.adoc[Hauptseite]
-
-.xmera Omnia Guide
 * xref:xmera-omnia-guide:anwenderhandbuch:bediengrundlagen.adoc[Anwenderhandbuch]
 * xref:xmera-omnia-guide:adminhandbuch:objektklassen.adoc[Adminhandbuch]
